@@ -1,31 +1,31 @@
-# Laravel için temel Dockerfile
-FROM php:8.3-fpm
+# PHP 8.3.0 imajını kullanalım
+FROM php:8.3.0-fpm
 
-# Sistem paketlerini ve bağımlılıkları yükle
-RUN apt-get update \
-    && apt-get install -y \
-        libpng-dev \
-        libjpeg-dev \
-        libfreetype6-dev \
-        zip \
-        git \
-        unzip \
-        curl \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd pdo pdo_mysql
+# ICU ve gerekli araçları yükleyin
+RUN apt-get update && apt-get install -y \
+    libicu-dev \
+    libzip-dev \
+    zip \
+    unzip \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
-# Composer yükle
-COPY --from=composer:2.7 /usr/bin/composer /usr/bin/composer
+# PHP eklentilerini yükleyin
+RUN docker-php-ext-install intl \
+    && docker-php-ext-configure zip --with-zip \
+    && docker-php-ext-install zip
 
-# Proje dosyalarını kopyala
-COPY . /var/www
+# Composer'ı yükleyin
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Çalışma dizinini belirleyin
 WORKDIR /var/www
 
-# Vendor klasörünü oluştur
-RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+# Projenizi çalışma dizinine kopyalayın
+COPY . .
 
-# Storage ve bootstrap/cache klasörlerine yazma izni ver
-RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+# Gerekirse proje bağımlılıklarını yükleyin
+RUN composer install
 
-EXPOSE 80
+# Uygulamayı ayağa kaldırın
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=80"]
