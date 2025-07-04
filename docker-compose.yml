@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: meringa-app
+    build: .
+    ports:
+      - "8022:80"
+    volumes:
+      - .:/var/www
