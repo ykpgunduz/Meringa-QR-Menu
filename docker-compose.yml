@@ -1,8 +1,19 @@
 services:
   app:
     container_name: meringa-app
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: meringa
     ports:
       - "8022:80"
     volumes:
       - .:/var/www
+    networks:
+      - meringa-network
+    environment:
+      - LC_ALL=tr_TR.UTF-8
+      - LANG=tr_TR.UTF-8
+
+networks:
+  meringa-network:
