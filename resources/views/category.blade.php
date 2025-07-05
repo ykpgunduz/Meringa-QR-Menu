@@ -6,6 +6,7 @@
     <title>Meringa QR Menü</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+
         body {
             background: #f3f6fa;
             font-family: 'Inter', Arial, sans-serif;
@@ -13,79 +14,100 @@
         }
         .navbar {
             width: 100%;
-            background: #fff;
+            background: #222;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 32px;
-            height: 64px;
+            position: relative;
+            height: 100px;
         }
         .navbar-logo {
+            position: absolute;
+            left: 0; right: 0;
+            top: 0; bottom: 0;
+            margin: auto;
+            height: 100px;
+            width: fit-content;
             display: flex;
             align-items: center;
+            justify-content: center;
             font-size: 1.5rem;
             font-weight: 700;
-            color: #2d2d2d;
+            color: #fff;
             letter-spacing: 1px;
         }
         .navbar-logo img {
-            height: 38px;
+            height: 90px;
             margin-right: 10px;
         }
         .lang-switcher {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
             display: flex;
-            gap: 10px;
+            gap: 8px;
             align-items: center;
         }
         .lang-btn {
-            background: none;
+            background: #222;
             border: none;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            color: #2d2d2d;
+            color: #fff;
             cursor: pointer;
             padding: 4px 10px;
-            border-radius: 6px;
-            transition: background 0.15s;
+            border-radius: 8px;
+            transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
         }
-        .lang-btn.active, .lang-btn:hover {
-            background: #f0ece6;
+        .lang-btn.active, .lang-btn:focus {
+            background: #fff;
+            color: #111;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+
+        .lang-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.15);
         }
         .category-container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 24px 8px 24px 8px;
+            padding: 16px 8px 24px 8px;
         }
         .category-title {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 32px;
+            margin-bottom: 18px;
             color: #2d2d2d;
         }
         .category-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 32px 20px;
+            gap: 16px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .category-card {
             position: relative;
-            border-radius: 18px;
+            border-radius: 14px;
             overflow: hidden;
             cursor: pointer;
             box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-            aspect-ratio: 1/0.75;
-            min-height: 140px;
+            min-height: 200px;
             background: #eee;
             display: flex;
+            flex-direction: column;
             align-items: stretch;
             border: none;
-            transition: box-shadow 0.2s, transform 0.2s;
-        }
-        .category-card:hover {
-            box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-            transform: translateY(-4px) scale(1.03);
+            width: 100%;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            transition: all 0.3s ease;
         }
         .category-bg {
             position: absolute;
@@ -112,7 +134,7 @@
             justify-content: center;
         }
         .category-name {
-            font-size: 1.45rem;
+            font-size: 1.15rem;
             font-weight: 700;
             color: #fff;
             text-align: center;
@@ -120,35 +142,14 @@
             padding: 0 8px;
             letter-spacing: 0.5px;
         }
-        @media (max-width: 600px) {
-            .navbar {
-                padding: 0 6px;
-                height: 48px;
-            }
-            .navbar-logo {
-                font-size: 1.1rem;
-            }
-            .navbar-logo img {
-                height: 28px;
-                margin-right: 6px;
-            }
+
+        .category-card:active {
+            transform: scale(0.96);
+            box-shadow: 0 1px 8px rgba(0,0,0,0.12);
+        }
+        @media (min-width: 600px) {
             .category-container {
-                padding: 10px 2px 18px 2px;
-            }
-            .category-title {
-                font-size: 1.1rem;
-                margin-bottom: 18px;
-            }
-            .category-grid {
-                gap: 16px 8px;
-            }
-            .category-card {
-                border-radius: 12px;
-                min-height: 90px;
-            }
-            .category-name {
-                font-size: 1.05rem;
-                padding: 0 2px;
+                max-width: 480px;
             }
         }
     </style>
@@ -156,8 +157,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-logo">
-            <img src="https://placehold.co/48x48?text=L" alt="Logo">
-            Meringa
+            <img src="/img/meringa.png" alt="Logo">
         </div>
         <div class="lang-switcher">
             <button class="lang-btn" id="lang-tr">TR</button>
@@ -165,14 +165,20 @@
         </div>
     </nav>
     <div class="category-container">
-        <h1 class="category-title">Kategoriler</h1>
         <div class="category-grid" id="categoryGrid">
             <!-- Kategoriler JS ile yüklenecek -->
         </div>
     </div>
+    <div class="container" style="height: 200px;">
+
+    </div>
     <script>
     // Dil seçimi ve localStorage
-    let lang = localStorage.getItem('lang') || 'tr';
+    function getLangFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('lang');
+    }
+    let lang = getLangFromUrl() || localStorage.getItem('lang') || 'tr';
     function setLang(newLang) {
         lang = newLang;
         localStorage.setItem('lang', lang);
@@ -186,6 +192,7 @@
     document.getElementById('lang-tr').onclick = () => setLang('tr');
     document.getElementById('lang-en').onclick = () => setLang('en');
     updateLangButtons();
+    localStorage.setItem('lang', lang);
 
     // Kategorileri products.json'dan çek ve göster
     let categories = [];
@@ -200,18 +207,32 @@
         grid.innerHTML = '';
         categories.forEach(cat => {
             // Görsel yolu kategori anahtarına göre
-            const imgPath = `/img/category/${cat.key}.jpg`;
+            let imgPath = `/img/category/${cat.key}.jpg`;
             const name = lang === 'tr' ? cat.name_tr : cat.name_en;
             const card = document.createElement('div');
             card.className = 'category-card';
-            card.onclick = () => window.location.href = `/category/${cat.key}`;
-            card.innerHTML = `
-                <img class="category-bg" src="${imgPath}" alt="${name}">
-                <div class="category-overlay"></div>
-                <div class="category-content">
-                    <div class="category-name">${name}</div>
-                </div>
-            `;
+            card.onclick = () => window.location.href = `/category/${cat.key}?lang=${lang}`;
+            // Resmin olup olmadığını kontrol et
+            const img = new Image();
+            img.onload = function() {
+                card.innerHTML = `
+                    <img class="category-bg" src="${imgPath}" alt="${name}">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <div class="category-name">${name}</div>
+                    </div>
+                `;
+            };
+            img.onerror = function() {
+                card.innerHTML = `
+                    <img class="category-bg" src="/img/default.jpg" alt="${name}">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <div class="category-name">${name}</div>
+                    </div>
+                `;
+            };
+            img.src = imgPath;
             grid.appendChild(card);
         });
     }
