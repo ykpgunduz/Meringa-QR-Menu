@@ -169,7 +169,7 @@
             <!-- Kategoriler JS ile yüklenecek -->
         </div>
     </div>
-    <div class="container" style="height: 200px;">
+    <div class="container" style="height: 20px;">
 
     </div>
     <script>
