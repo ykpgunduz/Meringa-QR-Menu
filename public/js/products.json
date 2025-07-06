@@ -26,12 +26,12 @@
         "name_en": "Cold Coffees"
       },
       {
-        "key": "sicak-icecEkler",
+        "key": "sicak-icecekler",
         "name_tr": "Sıcak İçecekler",
         "name_en": "Hot Drinks"
       },
       {
-        "key": "soguk-icecEkler",
+        "key": "soguk-icecekler",
         "name_tr": "Soğuk İçecekler",
         "name_en": "Cold Drinks"
       },
@@ -508,7 +508,7 @@
           "price": 205
         }
       ],
-      "sicak-icecEkler": [
+      "sicak-icecekler": [
         {
           "id": 58,
           "name_tr": "Çay",
@@ -526,7 +526,7 @@
           "price": 80
         }
       ],
-      "soguk-icecEkler": [
+      "soguk-icecekler": [
         {
           "id": 60,
           "name_tr": "Soda",
