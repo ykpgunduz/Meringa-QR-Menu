@@ -1071,7 +1071,20 @@
             function toggleLang() {
                 lang = lang === 'tr' ? 'en' : 'tr';
                 updateLangButton();
-                renderPage();
+                if (!productsData) {
+                    fetchData();
+                } else {
+                    renderPage();
+                    // Eğer arama modalı açıksa, arama sonuçlarını da güncelle
+                    if (document.getElementById('searchModal').classList.contains('show')) {
+                        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+                        if (query.length > 0) {
+                            performSearch(query);
+                        } else {
+                            displayAllProducts();
+                        }
+                    }
+                }
             }
 
             function updateLangButton() {

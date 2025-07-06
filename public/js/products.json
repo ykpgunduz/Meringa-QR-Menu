@@ -6,7 +6,7 @@
         "name_en": "Breakfast Snacks"
       },
       {
-        "key": "Ekmekler",
+        "key": "ekmekler",
         "name_tr": "Ekmekler",
         "name_en": "Breads"
       },
@@ -108,7 +108,7 @@
           "price": 45
         }
       ],
-      "Ekmekler": [
+      "ekmekler": [
         {
           "id": 9,
           "name_tr": "Kızılbuğday",
