@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kategori Ürünleri | Meringa QR Menü</title>
+    <title>Meringa QR Menü</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -1143,7 +1143,7 @@
                 // Menüye dön butonunu güncelle
                 document.getElementById('backMenuBtn').textContent = lang === 'tr' ? 'Menüye Dön' : 'Back to Menu';
                 document.getElementById('backMenuBtn').onclick = function() {
-                    window.location.href = '/?lang=' + lang;
+                    window.location.href = '/categories?lang=' + lang;
                 };
 
                          // Arama modalını güncelle

@@ -6,8 +6,8 @@
         "name_en": "Breakfast Snacks"
       },
       {
-        "key": "ekmEkler",
-        "name_tr": "EkmEkler",
+        "key": "Ekmekler",
+        "name_tr": "Ekmekler",
         "name_en": "Breads"
       },
       {
@@ -17,12 +17,12 @@
       },
       {
         "key": "sicak-kahveler",
-        "name_tr": "Sıcak kahveler",
+        "name_tr": "Sıcak Kahveler",
         "name_en": "Hot Coffees"
       },
       {
         "key": "soguk-kahveler",
-        "name_tr": "Soğuk kahveler",
+        "name_tr": "Soğuk Kahveler",
         "name_en": "Cold Coffees"
       },
       {
@@ -108,7 +108,7 @@
           "price": 45
         }
       ],
-      "ekmEkler": [
+      "Ekmekler": [
         {
           "id": 9,
           "name_tr": "Kızılbuğday",
