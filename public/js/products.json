@@ -2,12 +2,12 @@
     "categories": [
       {
         "key": "kahvaltilik-atistirmalik",
-        "name_tr": "Kahvaltılık atıştırmalıklar",
+        "name_tr": "Atıştırmalık Kahvaltı",
         "name_en": "Breakfast Snacks"
       },
       {
-        "key": "ekmekler",
-        "name_tr": "Ekmekler",
+        "key": "ekmEkler",
+        "name_tr": "EkmEkler",
         "name_en": "Breads"
       },
       {
@@ -26,13 +26,13 @@
         "name_en": "Cold Coffees"
       },
       {
-        "key": "sicak-icecekler",
-        "name_tr": "Sıcak içecekler",
+        "key": "sicak-icecEkler",
+        "name_tr": "Sıcak İçecekler",
         "name_en": "Hot Drinks"
       },
       {
-        "key": "soguk-icecekler",
-        "name_tr": "Soğuk içecekler",
+        "key": "soguk-icecEkler",
+        "name_tr": "Soğuk İçecekler",
         "name_en": "Cold Drinks"
       },
       {
@@ -45,7 +45,7 @@
       "kahvaltilik-atistirmalik": [
         {
           "id": 1,
-          "name_tr": "Ispanaklı labneli fupas",
+          "name_tr": "Ispanaklı Labneli Fupas",
           "name_en": "Spinach Labneh Fupas",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -53,7 +53,7 @@
         },
         {
           "id": 2,
-          "name_tr": "Zeytinli fupas",
+          "name_tr": "Zeytinli Fupas",
           "name_en": "Olive Fupas",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -61,7 +61,7 @@
         },
         {
           "id": 3,
-          "name_tr": "Ev poğaçası",
+          "name_tr": "Ev Poğaçası",
           "name_en": "Homemade Pastry",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -69,7 +69,7 @@
         },
         {
           "id": 4,
-          "name_tr": "Tereyağlı simit",
+          "name_tr": "Tereyağlı Simit",
           "name_en": "Buttered Bagel",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -85,7 +85,7 @@
         },
         {
           "id": 6,
-          "name_tr": "Roll kruvasan",
+          "name_tr": "Roll Kruvasan",
           "name_en": "Roll Croissant",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -93,7 +93,7 @@
         },
         {
           "id": 7,
-          "name_tr": "Küp kruvasan",
+          "name_tr": "Küp Kruvasan",
           "name_en": "Cube Croissant",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -101,14 +101,14 @@
         },
         {
           "id": 8,
-          "name_tr": "Pao de queijo",
+          "name_tr": "Pao de Queijo",
           "name_en": "Pao de Queijo",
           "desc_tr": "Adet",
           "desc_en": "Piece",
           "price": 45
         }
       ],
-      "ekmekler": [
+      "ekmEkler": [
         {
           "id": 9,
           "name_tr": "Kızılbuğday",
@@ -119,7 +119,7 @@
         },
         {
           "id": 10,
-          "name_tr": "Sade fransız baget",
+          "name_tr": "Sade Fransız Baget",
           "name_en": "Plain French Baguette",
           "desc_tr": "350 gr",
           "desc_en": "350 Gr",
@@ -127,7 +127,7 @@
         },
         {
           "id": 11,
-          "name_tr": "Zeytinli fransız baget",
+          "name_tr": "Zeytinli Fransız Baget",
           "name_en": "Olive French Baguette",
           "desc_tr": "350 gr",
           "desc_en": "350 Gr",
@@ -169,7 +169,7 @@
       "tatlilar": [
         {
           "id": 16,
-          "name_tr": "Çilekli milföy",
+          "name_tr": "Çilekli Milföy",
           "name_en": "Strawberry Mille-feuille",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -185,7 +185,7 @@
         },
         {
           "id": 18,
-          "name_tr": "Frambuazlı tart",
+          "name_tr": "Frambuazlı Tart",
           "name_en": "Raspberry Tart",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -193,7 +193,7 @@
         },
         {
           "id": 19,
-          "name_tr": "Çilekli tart",
+          "name_tr": "Çilekli Tart",
           "name_en": "Strawberry Tart",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -201,7 +201,7 @@
         },
         {
           "id": 20,
-          "name_tr": "Çikolatalı ekler",
+          "name_tr": "Çikolatalı Ekler",
           "name_en": "Chocolate Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
@@ -209,7 +209,7 @@
         },
         {
           "id": 21,
-          "name_tr": "Nutella ekler",
+          "name_tr": "Nutella Ekler",
           "name_en": "Nutella Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
@@ -217,7 +217,7 @@
         },
         {
           "id": 22,
-          "name_tr": "Lotus ekler",
+          "name_tr": "Lotus Ekler",
           "name_en": "Lotus Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
@@ -225,7 +225,7 @@
         },
         {
           "id": 23,
-          "name_tr": "Angel cake",
+          "name_tr": "Angel Cake",
           "name_en": "Angel Cake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -241,16 +241,16 @@
         },
         {
           "id": 25,
-          "name_tr": "Lotus cheese cake",
-          "name_en": "Lotus Cheesecake",
+          "name_tr": "Lotus Cheese Cake",
+          "name_en": "Lotus CheeseCake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
           "price": 290
         },
         {
           "id": 26,
-          "name_tr": "Nutella cheese cake",
-          "name_en": "Nutella Cheesecake",
+          "name_tr": "Nutella Cheese Cake",
+          "name_en": "Nutella CheeseCake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
           "price": 290
@@ -265,7 +265,7 @@
         },
         {
           "id": 28,
-          "name_tr": "Deluxe cake",
+          "name_tr": "Deluxe Cake",
           "name_en": "Deluxe Cake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -273,7 +273,7 @@
         },
         {
           "id": 29,
-          "name_tr": "Çikolatalı İsveç sarma",
+          "name_tr": "Çikolatalı İsveç Sarma",
           "name_en": "Chocolate Swedish Roll",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -281,7 +281,7 @@
         },
         {
           "id": 30,
-          "name_tr": "Beyaz çikolatalı İsveç sarma",
+          "name_tr": "Beyaz Çikolatalı İsveç Sarma",
           "name_en": "White Chocolate Swedish Roll",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -289,7 +289,7 @@
         },
         {
           "id": 31,
-          "name_tr": "Ruby cake",
+          "name_tr": "Ruby Cake",
           "name_en": "Ruby Cake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -305,7 +305,7 @@
         },
         {
           "id": 33,
-          "name_tr": "Nutella browni",
+          "name_tr": "Nutella Browni",
           "name_en": "Nutella Brownie",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -313,7 +313,7 @@
         },
         {
           "id": 34,
-          "name_tr": "Lotus browni",
+          "name_tr": "Lotus Browni",
           "name_en": "Lotus Brownie",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -329,7 +329,7 @@
         },
         {
           "id": 36,
-          "name_tr": "Fıstıklı tek pasta",
+          "name_tr": "Fıstıklı Tek Pasta",
           "name_en": "Single Pistachio Cake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -337,15 +337,15 @@
         },
         {
           "id": 37,
-          "name_tr": "Turta No:1",
-          "name_en": "Torte No:1",
+          "name_tr": "Turta No: 1",
+          "name_en": "Torte No: 1",
           "desc_tr": "Adet",
           "desc_en": "Piece",
           "price": 1250
         },
         {
           "id": 38,
-          "name_tr": "Karamel çik. ekler",
+          "name_tr": "Karamel çik. Ekler",
           "name_en": "Caramel Chocolate Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
@@ -353,7 +353,7 @@
         },
         {
           "id": 39,
-          "name_tr": "Fıstıklı ekler",
+          "name_tr": "Fıstıklı Ekler",
           "name_en": "Pistachio Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
@@ -361,7 +361,7 @@
         },
         {
           "id": 40,
-          "name_tr": "Tiramisu ekler",
+          "name_tr": "Tiramisu Ekler",
           "name_en": "Tiramisu Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
@@ -443,7 +443,7 @@
         },
         {
           "id": 50,
-          "name_tr": "White chocolate mocha",
+          "name_tr": "White chocolate Mocha",
           "name_en": "White Chocolate Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -485,7 +485,7 @@
         },
         {
           "id": 55,
-          "name_tr": "Ice americano",
+          "name_tr": "Ice Americano",
           "name_en": "Iced Americano",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -493,7 +493,7 @@
         },
         {
           "id": 56,
-          "name_tr": "Ice mocha",
+          "name_tr": "Ice Mocha",
           "name_en": "Iced Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -501,14 +501,14 @@
         },
         {
           "id": 57,
-          "name_tr": "Ice white mocha",
+          "name_tr": "Ice White Mocha",
           "name_en": "Iced White Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
           "price": 205
         }
       ],
-      "sicak-icecekler": [
+      "sicak-icecEkler": [
         {
           "id": 58,
           "name_tr": "Çay",
@@ -526,7 +526,7 @@
           "price": 80
         }
       ],
-      "soguk-icecekler": [
+      "soguk-icecEkler": [
         {
           "id": 60,
           "name_tr": "Soda",
@@ -561,11 +561,19 @@
         },
         {
           "id": 64,
-          "name_tr": "Fuse tea (şeftali-limon)",
-          "name_en": "Fuse Tea (Peach-Lemon)",
+          "name_tr": "Fuse Tea Limon",
+          "name_en": "Fuse Tea Lemon",
           "desc_tr": "Adet",
           "desc_en": "Piece",
           "price": 80
+        },
+        {
+            "id": 65,
+            "name_tr": "Fuse Tea Şeftali",
+            "name_en": "Fuse Tea Peach",
+            "desc_tr": "Adet",
+            "desc_en": "Piece",
+            "price": 80
         }
       ],
       "bowl-salatalar": [

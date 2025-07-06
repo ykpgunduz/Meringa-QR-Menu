@@ -354,18 +354,450 @@
             margin-left: 12px;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        /* Arama Modal Stilleri */
+        .search-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+        .search-modal.show {
+            display: flex;
+            opacity: 1;
         }
 
-        .product-item {
-            animation: fadeIn 0.6s ease forwards;
+                 .search-container {
+             background: #fff;
+             border-radius: 20px;
+             margin: 20px;
+             padding: 20px;
+             width: 100%;
+             max-width: 600px;
+             height: calc(100vh - 40px);
+             display: flex;
+             flex-direction: column;
+             transform: translateY(-50px);
+             transition: transform 0.3s ease;
+         }
+
+        .search-modal.show .search-container {
+            transform: translateY(0);
+        }
+
+                 .search-header {
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             margin-bottom: 25px;
+             padding-bottom: 18px;
+             border-bottom: 2px solid #f0f2f5;
+         }
+
+        .search-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d2d2d;
+        }
+
+        .search-close {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f0f2f5;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #6c757d;
+        }
+
+        .search-close:hover {
+            background: #e8eaed;
+            color: #2d2d2d;
+            transform: scale(1.1);
+        }
+
+                 .search-input-container {
+             position: relative;
+             margin-bottom: 25px;
+         }
+
+                 .search-input {
+             width: 100%;
+             padding: 18px 20px 18px 55px;
+             border: 2px solid #f0f2f5;
+             border-radius: 15px;
+             font-size: 1.1rem;
+             background: #fafbfc;
+             transition: all 0.3s ease;
+             color: #2d2d2d;
+         }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #d4af37;
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+                 .search-icon {
+             position: absolute;
+             left: 18px;
+             top: 50%;
+             transform: translateY(-50%);
+             color: #6c757d;
+             pointer-events: none;
+         }
+
+                 .search-results {
+             flex: 1;
+             overflow-y: auto;
+             padding-right: 10px;
+         }
+
+         .search-results::-webkit-scrollbar {
+             width: 6px;
+         }
+
+         .search-results::-webkit-scrollbar-track {
+             background: #f1f1f1;
+             border-radius: 3px;
+         }
+
+         .search-results::-webkit-scrollbar-thumb {
+             background: #d4af37;
+             border-radius: 3px;
+         }
+
+         .search-results::-webkit-scrollbar-thumb:hover {
+             background: #b8941f;
+         }
+
+                 .search-result-item {
+             display: flex;
+             align-items: center;
+             padding: 18px;
+             border-radius: 15px;
+             margin-bottom: 12px;
+             background: #fafbfc;
+             border: 1px solid #f0f2f5;
+             transition: all 0.3s ease;
+             cursor: pointer;
+             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+         }
+
+        .search-result-item:hover {
+            background: #f0f2f5;
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+                 .search-result-img {
+             width: 70px;
+             height: 70px;
+             border-radius: 12px;
+             object-fit: cover;
+             margin-right: 18px;
+             background: #f5f5f5;
+             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+         }
+
+        .search-result-info {
+            flex: 1;
+        }
+
+                 .search-result-name {
+             font-size: 1rem;
+             font-weight: 600;
+             color: #2d2d2d;
+             margin-bottom: 4px;
+         }
+
+         .search-result-category {
+             font-size: 0.8rem;
+             font-weight: 500;
+             color: #d4af37;
+             margin-bottom: 4px;
+             text-transform: uppercase;
+             letter-spacing: 0.5px;
+         }
+
+         .search-result-price {
+             font-size: 1rem;
+             font-weight: 700;
+             color: #d4af37;
+         }
+
+        .search-result-desc {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-top: 4px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
+        }
+
+        .no-results-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            opacity: 0.6;
+        }
+
+        .no-results-text {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: #fff;
+            color: #333;
+            padding: 0;
+            margin-top: 30px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
+        .footer-logo-img {
+            width: auto;
+            height: 80px;
+            border-radius: 12px;
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin: 0;
+        }
+
+        .footer-description {
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .footer-heading {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #d4af37;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .contact-item svg {
+            color: #d4af37;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-hours {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .hours-item:last-child {
+            border-bottom: none;
+        }
+
+        .day {
+            color: #666;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .time {
+            color: #d4af37;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .footer-social {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            flex-wrap: nowrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            width: 130px;
+            justify-content: center;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .social-link.instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: #fff;
+            border: none;
+        }
+
+        .social-link.instagram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+        }
+
+        .social-link.maps {
+            background: #4285f4;
+            color: #fff;
+            border: none;
+        }
+
+        .social-link.maps:hover {
+            background: #3367d6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+        }
+
+        /* Reklam Çubuğu */
+        .ad-bar {
+            background: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ad-bar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(120deg, rgba(255,255,255,0.10) 0%, rgba(200,200,200,0.13) 40%, rgba(255,255,255,0.10) 100%);
+            opacity: 0.7;
+            pointer-events: none;
+            z-index: 1;
+            animation: shimmerBar 3.5s linear infinite;
+            background-size: 200% 100%;
+        }
+        @keyframes shimmerBar {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        .ad-content.harpy-ad {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        .harpy-logo {
+            height: 64px;
+            width: auto;
+            display: inline-block;
+        }
+        .harpy-link {
+            text-decoration: none;
+            display: inline-block;
+        }
+        .harpy-text {
+            color: #f5f5f5;
+            font-family: 'Playfair Display', 'Montserrat', 'Poppins', serif, sans-serif;
+            font-weight: 600;
+            font-size: 1.45rem;
+            letter-spacing: 1.3px;
+            background: linear-gradient(90deg, #fff 0%, #e0d6c3 40%, #f5f5f5 60%, #fff 100%);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmerTextLux 2.5s linear infinite;
+            transition: color 0.2s;
+        }
+        .harpy-link:hover .harpy-text {
+            filter: brightness(1.18) drop-shadow(0 0 8px #fff8);
+        }
+        @keyframes shimmerTextLux {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        @media (max-width: 480px) {
+            .harpy-logo { height: 41px; }
+            .harpy-text { font-size: 1.05rem; }
+            .ad-content.harpy-ad { gap: 7px; }
         }
 
         @media (max-width: 768px) {
@@ -438,187 +870,510 @@
                 height: 65px;
                 margin-right: 14px;
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <img class="header-img" id="headerImg" src="" alt="Kategori Görseli">
-            <div class="header-overlay"></div>
-            <div class="header-controls">
-                <button class="header-lang" id="lang-toggle"></button>
-                <div class="header-search" title="Ara">
-                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="8"/>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                    </svg>
+
+            .search-container {
+                margin: 10px;
+                padding: 15px;
+                height: calc(100vh - 20px);
+            }
+
+            .search-result-item {
+                padding: 15px;
+                margin-bottom: 10px;
+            }
+
+            .search-result-img {
+                width: 60px;
+                height: 60px;
+                margin-right: 15px;
+            }
+
+            .search-input {
+                padding: 15px 18px 15px 50px;
+                font-size: 1rem;
+            }
+
+            .footer-content {
+                gap: 20px;
+                padding: 20px 15px 15px;
+            }
+
+            .footer-logo-img {
+                width: auto;
+                height: 150px;
+            }
+
+            .contact-item {
+                font-size: 0.8rem;
+                margin-bottom: 6px;
+                max-width: 100%;
+            }
+
+            .footer-social {
+                flex-direction: row;
+                gap: 10px;
+                flex-wrap: nowrap;
+            }
+
+            .social-link {
+                padding: 10px 16px;
+                font-size: 0.8rem;
+                width: 110px;
+                flex-shrink: 0;
+            }
+
+            .ad-content {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .ad-text, .ad-link {
+                font-size: 0.75rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img class="header-img" id="headerImg" src="" alt="Kategori Görseli">
+                <div class="header-overlay"></div>
+                <div class="header-controls">
+                    <button class="header-lang" id="lang-toggle"></button>
+                    <div class="header-search" title="Ara">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <div class="header-title" id="categoryTitle">Kategori</div>
+                    <button class="header-btn" id="backMenuBtn">Menüye Dön</button>
                 </div>
             </div>
-            <div class="header-content">
-                <div class="header-title" id="categoryTitle">Kategori</div>
-                <button class="header-btn" id="backMenuBtn">Menüye Dön</button>
+
+            <div class="main-content">
+                <div class="product-list" id="productList">
+                    <div class="loading" id="loadingState">Ürünler yükleniyor</div>
+                </div>
+
+                <div class="empty-state" id="emptyState" style="display:none;">
+                    <div class="empty-icon">🍽️</div>
+                    <div class="empty-text">Bu kategoride ürün bulunmuyor</div>
+                </div>
             </div>
         </div>
 
-        <div class="main-content">
-            <div class="product-list" id="productList">
-                <div class="loading" id="loadingState">Ürünler yükleniyor</div>
-            </div>
+        <a href="#" class="back-to-top" id="backToTop">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="12" y1="19" x2="12" y2="5"/>
+                <polyline points="5,12 12,5 19,12"/>
+            </svg>
+        </a>
 
-            <div class="empty-state" id="emptyState" style="display:none;">
-                <div class="empty-icon">🍽️</div>
-                <div class="empty-text">Bu kategoride ürün bulunmuyor</div>
-            </div>
-        </div>
-    </div>
-
-    <a href="#" class="back-to-top" id="backToTop">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <line x1="12" y1="19" x2="12" y2="5"/>
-            <polyline points="5,12 12,5 19,12"/>
-        </svg>
-    </a>
-
-    <div class="containers" style="height: 250px; background-color: gray;">
-
-    </div>
-
-    <script>
-        // Dil seçimi
-        function getLangFromUrl() {
-            const params = new URLSearchParams(window.location.search);
-            return params.get('lang');
-        }
-
-        let lang = getLangFromUrl() || 'tr';
-
-        function toggleLang() {
-            lang = lang === 'tr' ? 'en' : 'tr';
-            updateLangButton();
-            renderPage();
-        }
-
-        function updateLangButton() {
-            const btn = document.getElementById('lang-toggle');
-            btn.textContent = lang.toUpperCase();
-        }
-
-        // Scroll to top functionality
-        const backToTop = document.getElementById('backToTop');
-
-        function checkScrollPosition() {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('show');
-            } else {
-                backToTop.classList.remove('show');
-            }
-        }
-
-        window.addEventListener('scroll', checkScrollPosition);
-        window.addEventListener('load', checkScrollPosition);
-
-        backToTop.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        document.getElementById('lang-toggle').onclick = toggleLang;
-        updateLangButton();
-
-        // Kategori anahtarı URL'den alınır
-        function getCategoryKey() {
-            const path = window.location.pathname;
-            const match = path.match(/category\/(.+)$/);
-            return match ? match[1] : '';
-        }
-
-        let productsData = null;
-
-        async function fetchData() {
-            try {
-                const res = await fetch('/js/products.json');
-                productsData = await res.json();
-                renderPage();
-            } catch (error) {
-                console.error('Veri yükleme hatası:', error);
-                document.getElementById('loadingState').textContent = 'Yükleme hatası oluştu';
-            }
-        }
-
-        function renderPage() {
-            if (!productsData) return;
-
-            const catKey = getCategoryKey();
-            const category = productsData.categories.find(c => c.key === catKey);
-
-            // Kategori bilgilerini güncelle
-            const categoryTitle = category ? (lang === 'tr' ? category.name_tr : category.name_en) : 'Kategori';
-            document.getElementById('categoryTitle').textContent = categoryTitle;
-
-            // Kategori görseli
-            document.getElementById('headerImg').src = `/img/category/${catKey}.jpg`;
-
-            // Menüye dön butonunu güncelle
-            document.getElementById('backMenuBtn').textContent = lang === 'tr' ? 'Menüye Dön' : 'Back to Menu';
-            document.getElementById('backMenuBtn').onclick = function() {
-                window.location.href = '/?lang=' + lang;
-            };
-
-            const productList = document.getElementById('productList');
-            const emptyState = document.getElementById('emptyState');
-            const loadingState = document.getElementById('loadingState');
-
-            // Loading state'i gizle
-            loadingState.style.display = 'none';
-
-            productList.innerHTML = '';
-            emptyState.style.display = 'none';
-
-            const products = productsData.products[catKey] || [];
-
-            if (products.length === 0) {
-                const emptyMessage = lang === 'tr' ? 'Bu kategoride ürün bulunmuyor' : 'No products in this category';
-                emptyState.querySelector('.empty-text').textContent = emptyMessage;
-                emptyState.style.display = 'block';
-                return;
-            }
-
-            // Ürünleri render et
-            products.forEach((product, index) => {
-                const item = document.createElement('div');
-                item.className = 'product-item';
-                item.style.animationDelay = `${index * 0.1}s`;
-
-                const imgPath = `/img/products/${catKey}/${product.id}.jpg`;
-                const productName = lang === 'tr' ? product.name_tr : product.name_en;
-                const productDesc = lang === 'tr' ? product.desc_tr : product.desc_en;
-
-                item.innerHTML = `
-                    <img class='product-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
-                    <div class='product-info'>
-                        <div class='product-header'>
-                            <div class='product-name'>${productName}</div>
-                            <div class='product-price'>${product.price}₺</div>
-                        </div>
-                        <div class='product-desc'>${productDesc || ''}</div>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Kafe Bilgileri -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/img/meringa-renkli.png" alt="Meringa Logo" class="footer-logo-img">
                     </div>
-                `;
+                </div>
 
-                productList.appendChild(item);
+                <!-- İletişim ve Çalışma Saatleri -->
+                <div class="footer-section">
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Yeşilköy Mahallesi, Şehit Özcan Canik Sokak, No: 3/70B Bakırköy, 34000 Florya/İstanbul</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Her Gün 07:30 – 00:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sosyal Medya -->
+                <div class="footer-section">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/meringabakeryy/" target="_blank" class="social-link instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/dfMfdrm7aXaPamyf6" target="_blank" class="social-link maps">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Haritalar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reklam Çubuğu -->
+            <div class="ad-bar">
+                <div class="ad-content harpy-ad">
+                    <img src="/img/harpy-logo.png" alt="Harpy Social" class="harpy-logo">
+                    <a href="https://harpysocial.com" target="_blank" class="harpy-link"><span class="harpy-text">Harpy Social</span></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="containers" style="height: 180px">
+
+        </div>
+
+        <div class="search-modal" id="searchModal">
+            <div class="search-container">
+                <div class="search-header">
+                    <h2 class="search-title">Ürün Ara</h2>
+                    <button class="search-close" id="closeSearch">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-input-container">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Ürün adını girin...">
+                    <span class="search-icon">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="search-results" id="searchResults">
+                    <!-- Arama sonuçları burada görüntülenecek -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Dil seçimi
+            function getLangFromUrl() {
+                const params = new URLSearchParams(window.location.search);
+                return params.get('lang');
+            }
+
+            let lang = getLangFromUrl() || 'tr';
+
+            function toggleLang() {
+                lang = lang === 'tr' ? 'en' : 'tr';
+                updateLangButton();
+                renderPage();
+            }
+
+            function updateLangButton() {
+                const btn = document.getElementById('lang-toggle');
+                btn.textContent = lang.toUpperCase();
+            }
+
+            // Scroll to top functionality
+            const backToTop = document.getElementById('backToTop');
+
+            function checkScrollPosition() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            }
+
+            window.addEventListener('scroll', checkScrollPosition);
+            window.addEventListener('load', checkScrollPosition);
+
+            backToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
 
-            // Scroll pozisyonunu kontrol et
-            checkScrollPosition();
-        }
+            document.getElementById('lang-toggle').onclick = toggleLang;
+            updateLangButton();
 
-        // Sayfa yüklendiğinde
-        document.addEventListener('DOMContentLoaded', function() {
-            fetchData();
-        });
-    </script>
-</body>
+            // Arama butonuna tıklama olayı
+            document.querySelector('.header-search').onclick = showSearchModal;
+
+            // Kategori anahtarı URL'den alınır
+            function getCategoryKey() {
+                const path = window.location.pathname;
+                const match = path.match(/category\/(.+)$/);
+                return match ? match[1] : '';
+            }
+
+            let productsData = null;
+
+            async function fetchData() {
+                try {
+                    const res = await fetch('/js/products.json');
+                    productsData = await res.json();
+                    renderPage();
+                } catch (error) {
+                    console.error('Veri yükleme hatası:', error);
+                    document.getElementById('loadingState').textContent = 'Yükleme hatası oluştu';
+                }
+            }
+
+            function renderPage() {
+                if (!productsData) return;
+
+                const catKey = getCategoryKey();
+                const category = productsData.categories.find(c => c.key === catKey);
+
+                // Kategori bilgilerini güncelle
+                const categoryTitle = category ? (lang === 'tr' ? category.name_tr : category.name_en) : 'Kategori';
+                document.getElementById('categoryTitle').textContent = categoryTitle;
+
+                // Kategori görseli
+                document.getElementById('headerImg').src = `/img/category/${catKey}.jpg`;
+
+                // Menüye dön butonunu güncelle
+                document.getElementById('backMenuBtn').textContent = lang === 'tr' ? 'Menüye Dön' : 'Back to Menu';
+                document.getElementById('backMenuBtn').onclick = function() {
+                    window.location.href = '/?lang=' + lang;
+                };
+
+                         // Arama modalını güncelle
+                 document.querySelector('.search-title').textContent = lang === 'tr' ? 'Tüm Kategorilerde Ara' : 'Search All Categories';
+                 document.getElementById('searchInput').placeholder = lang === 'tr' ? 'Ürün adını girin...' : 'Enter product name...';
+
+                const productList = document.getElementById('productList');
+                const emptyState = document.getElementById('emptyState');
+                const loadingState = document.getElementById('loadingState');
+
+                // Loading state'i gizle
+                loadingState.style.display = 'none';
+
+                productList.innerHTML = '';
+                emptyState.style.display = 'none';
+
+                const products = productsData.products[catKey] || [];
+
+                if (products.length === 0) {
+                    const emptyMessage = lang === 'tr' ? 'Bu kategoride ürün bulunmuyor' : 'No products in this category';
+                    emptyState.querySelector('.empty-text').textContent = emptyMessage;
+                    emptyState.style.display = 'block';
+                    return;
+                }
+
+                // Ürünleri render et
+                products.forEach((product, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'product-item';
+                    item.style.animationDelay = `${index * 0.1}s`;
+
+                    const imgPath = `/img/products/${catKey}/${product.id}.jpg`;
+                    const productName = lang === 'tr' ? product.name_tr : product.name_en;
+                    const productDesc = lang === 'tr' ? product.desc_tr : product.desc_en;
+
+                    item.innerHTML = `
+                        <img class='product-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
+                        <div class='product-info'>
+                            <div class='product-header'>
+                                <div class='product-name'>${productName}</div>
+                                <div class='product-price'>${product.price}₺</div>
+                            </div>
+                            <div class='product-desc'>${productDesc || ''}</div>
+                        </div>
+                    `;
+
+                    productList.appendChild(item);
+                });
+
+                // Scroll pozisyonunu kontrol et
+                checkScrollPosition();
+            }
+
+            // Sayfa yüklendiğinde
+            document.addEventListener('DOMContentLoaded', function() {
+                fetchData();
+            });
+
+            // Arama işlemleri
+            const searchModal = document.getElementById('searchModal');
+            const closeSearch = document.getElementById('closeSearch');
+            const searchInput = document.getElementById('searchInput');
+            const searchResults = document.getElementById('searchResults');
+
+                     function showSearchModal() {
+                 searchModal.classList.add('show');
+                 document.body.classList.add('no-scroll');
+
+                 // Modal açıldığında input'a focus ol ve tüm ürünleri göster
+                 setTimeout(() => {
+                     searchInput.focus();
+                     displayAllProducts();
+                 }, 100);
+             }
+
+            function hideSearchModal() {
+                searchModal.classList.remove('show');
+                document.body.classList.remove('no-scroll');
+            }
+
+            closeSearch.addEventListener('click', hideSearchModal);
+
+                     searchInput.addEventListener('input', function() {
+                 const query = searchInput.value.trim().toLowerCase();
+                 if (query.length > 0) {
+                     performSearch(query);
+                 } else {
+                     // Arama çubuğu boşsa tüm ürünleri göster
+                     displayAllProducts();
+                 }
+             });
+
+                               function displayAllProducts() {
+                 // Tüm kategorilerdeki ürünleri topla
+                 const allProducts = [];
+
+                 Object.keys(productsData.products).forEach(catKey => {
+                     const products = productsData.products[catKey] || [];
+                     products.forEach(product => {
+                         allProducts.push({
+                             ...product,
+                             categoryKey: catKey,
+                             categoryName: productsData.categories.find(c => c.key === catKey)
+                         });
+                     });
+                 });
+
+                 if (allProducts.length > 0) {
+                     displaySearchResults(allProducts);
+                 } else {
+                     displayNoResults();
+                 }
+             }
+
+                      function performSearch(query) {
+                 // Tüm kategorilerde arama yap
+                 const allProducts = [];
+
+                 Object.keys(productsData.products).forEach(catKey => {
+                     const products = productsData.products[catKey] || [];
+                     products.forEach(product => {
+                         allProducts.push({
+                             ...product,
+                             categoryKey: catKey,
+                             categoryName: productsData.categories.find(c => c.key === catKey)
+                         });
+                     });
+                 });
+
+                 const results = allProducts.filter(product => {
+                     const name = lang === 'tr' ? product.name_tr : product.name_en;
+                     const desc = lang === 'tr' ? product.desc_tr : product.desc_en;
+
+                     return name.toLowerCase().includes(query) ||
+                            (desc && desc.toLowerCase().includes(query));
+                 });
+
+                 if (results.length > 0) {
+                     displaySearchResults(results);
+                 } else {
+                     displayNoResults();
+                 }
+             }
+
+                      function displaySearchResults(results) {
+                 searchResults.innerHTML = '';
+
+                 results.forEach((product, index) => {
+                     const item = document.createElement('div');
+                     item.className = 'search-result-item';
+                     item.style.animationDelay = `${index * 0.1}s`;
+
+                     item.onclick = function() {
+                         hideSearchModal();
+
+                         // Eğer ürün farklı kategorideyse, o kategoriye git
+                         if (product.categoryKey !== getCategoryKey()) {
+                             window.location.href = `/category/${product.categoryKey}?lang=${lang}`;
+                         } else {
+                             // Aynı kategorideyse ürünü göster
+                             scrollToProduct(product.id);
+                         }
+                     };
+
+                     const imgPath = `/img/products/${product.categoryKey}/${product.id}.jpg`;
+                     const productName = lang === 'tr' ? product.name_tr : product.name_en;
+                     const productDesc = lang === 'tr' ? product.desc_tr : product.desc_en;
+                     const categoryName = lang === 'tr' ? product.categoryName.name_tr : product.categoryName.name_en;
+
+                     item.innerHTML = `
+                         <img class='search-result-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
+                         <div class='search-result-info'>
+                             <div class='search-result-name'>${productName}</div>
+                             <div class='search-result-category'>${categoryName}</div>
+                             <div class='search-result-price'>${product.price}₺</div>
+                             <div class='search-result-desc'>${productDesc || ''}</div>
+                         </div>
+                     `;
+
+                     searchResults.appendChild(item);
+                 });
+             }
+
+                     function displayNoResults() {
+                 const noResultsText = lang === 'tr' ? 'Ürün bulunamadı' : 'No products found';
+                 searchResults.innerHTML = `
+                     <div class="no-results">
+                         <div class="no-results-icon">🔍</div>
+                         <div class="no-results-text">${noResultsText}</div>
+                     </div>
+                 `;
+             }
+
+                     function scrollToProduct(productId) {
+                 const productElements = document.querySelectorAll('.product-item');
+                 for (let element of productElements) {
+                     const img = element.querySelector('.product-img');
+                     if (img && img.src.includes(productId)) {
+                         element.scrollIntoView({
+                             behavior: 'smooth',
+                             block: 'center'
+                         });
+
+                         // Ürünü vurgula
+                         element.style.background = 'linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%)';
+                         element.style.border = '2px solid #d4af37';
+
+                         setTimeout(() => {
+                             element.style.background = '';
+                             element.style.border = '';
+                         }, 3000);
+
+                         break;
+                     }
+                 }
+             }
+
+             // Modal dışına tıklayınca kapatma
+             searchModal.addEventListener('click', function(e) {
+                 if (e.target === searchModal) {
+                     hideSearchModal();
+                 }
+             });
+
+             // ESC tuşu ile kapatma
+             document.addEventListener('keydown', function(e) {
+                 if (e.key === 'Escape' && searchModal.classList.contains('show')) {
+                     hideSearchModal();
+                 }
+             });
+        </script>
+    </body>
 </html>
