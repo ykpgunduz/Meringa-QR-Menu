@@ -169,9 +169,6 @@
             <!-- Kategoriler JS ile yüklenecek -->
         </div>
     </div>
-    <div class="container" style="height: 20px;">
-
-    </div>
     <script>
     // Dil seçimi ve localStorage
     function getLangFromUrl() {
