@@ -1063,18 +1063,32 @@
             // Dil seçimi
             function getLangFromUrl() {
                 const params = new URLSearchParams(window.location.search);
-                return params.get('lang');
+                const langParam = params.get('lang');
+                console.log('URL\'den alınan dil:', langParam);
+                return langParam;
             }
 
             let lang = getLangFromUrl() || 'tr';
+            console.log('Başlangıç dili:', lang);
 
-            function toggleLang() {
+                                    function toggleLang() {
+                const oldLang = lang;
                 lang = lang === 'tr' ? 'en' : 'tr';
+                console.log('Dil değiştirildi:', oldLang, '->', lang);
+
                 updateLangButton();
-                if (!productsData) {
-                    fetchData();
-                } else {
+
+                // URL'yi güncelle
+                const currentUrl = new URL(window.location);
+                currentUrl.searchParams.set('lang', lang);
+                window.history.replaceState({}, '', currentUrl);
+                console.log('URL güncellendi:', currentUrl.toString());
+
+                // Sayfayı hemen güncelle
+                if (productsData) {
+                    console.log('productsData mevcut, renderPage çağrılıyor...');
                     renderPage();
+
                     // Eğer arama modalı açıksa, arama sonuçlarını da güncelle
                     if (document.getElementById('searchModal').classList.contains('show')) {
                         const query = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -1084,6 +1098,9 @@
                             displayAllProducts();
                         }
                     }
+                } else {
+                    console.log('productsData yok, fetchData çağrılıyor...');
+                    fetchData();
                 }
             }
 
@@ -1130,9 +1147,11 @@
             let productsData = null;
 
             async function fetchData() {
+                console.log('fetchData başladı...');
                 try {
                     const res = await fetch('/js/products.json');
                     productsData = await res.json();
+                    console.log('JSON verisi yüklendi, renderPage çağrılıyor...');
                     renderPage();
                 } catch (error) {
                     console.error('Veri yükleme hatası:', error);
@@ -1140,14 +1159,24 @@
                 }
             }
 
-            function renderPage() {
-                if (!productsData) return;
+                        function renderPage() {
+                console.log('=== renderPage başladı ===');
+                console.log('productsData mevcut mu:', !!productsData);
+                console.log('Mevcut dil:', lang);
+
+                if (!productsData) {
+                    console.log('productsData yok, renderPage çıkıyor');
+                    return;
+                }
 
                 const catKey = getCategoryKey();
+                console.log('Kategori anahtarı:', catKey);
                 const category = productsData.categories.find(c => c.key === catKey);
+                console.log('Bulunan kategori:', category);
 
                 // Kategori bilgilerini güncelle
-                const categoryTitle = category ? (lang === 'tr' ? category.name_tr : category.name_en) : 'Kategori';
+                const categoryTitle = category ? (lang === 'tr' ? category.name_tr : (category.name_en || category.name_tr || 'Kategori')) : 'Kategori';
+                console.log('Kategori başlığı:', categoryTitle);
                 document.getElementById('categoryTitle').textContent = categoryTitle;
 
                 // Kategori görseli
@@ -1159,55 +1188,91 @@
                     window.location.href = '/categories?lang=' + lang;
                 };
 
-                         // Arama modalını güncelle
-                 document.querySelector('.search-title').textContent = lang === 'tr' ? 'Tüm Kategorilerde Ara' : 'Search All Categories';
-                 document.getElementById('searchInput').placeholder = lang === 'tr' ? 'Ürün adını girin...' : 'Enter product name...';
+                // Arama modalını güncelle
+                document.querySelector('.search-title').textContent = lang === 'tr' ? 'Ürün Ara' : 'Search Products';
+                document.getElementById('searchInput').placeholder = lang === 'tr' ? 'Ürün adını girin...' : 'Enter product name...';
 
-                const productList = document.getElementById('productList');
+                                const productList = document.getElementById('productList');
                 const emptyState = document.getElementById('emptyState');
                 const loadingState = document.getElementById('loadingState');
 
-                // Loading state'i gizle
-                loadingState.style.display = 'none';
+                // Loading state'i gizle (null kontrolü ile)
+                if (loadingState) {
+                    loadingState.style.display = 'none';
+                }
 
-                productList.innerHTML = '';
-                emptyState.style.display = 'none';
+                // Ürün listesini tamamen temizle
+                if (productList) {
+                    productList.innerHTML = '';
+                }
+                if (emptyState) {
+                    emptyState.style.display = 'none';
+                }
+
+                console.log('Ürün listesi temizlendi, yeni ürünler render ediliyor...');
 
                 const products = productsData.products[catKey] || [];
+                console.log('Kategori ürünleri:', products.length, 'adet');
 
                 if (products.length === 0) {
                     const emptyMessage = lang === 'tr' ? 'Bu kategoride ürün bulunmuyor' : 'No products in this category';
-                    emptyState.querySelector('.empty-text').textContent = emptyMessage;
-                    emptyState.style.display = 'block';
+                    console.log('Boş mesaj:', emptyMessage);
+                    if (emptyState) {
+                        const emptyText = emptyState.querySelector('.empty-text');
+                        if (emptyText) {
+                            emptyText.textContent = emptyMessage;
+                        }
+                        emptyState.style.display = 'block';
+                    }
                     return;
                 }
 
-                // Ürünleri render et
-                products.forEach((product, index) => {
-                    const item = document.createElement('div');
-                    item.className = 'product-item';
-                    item.style.animationDelay = `${index * 0.1}s`;
+                                                // Ürünleri render et
+                console.log('Ürünler render ediliyor, toplam:', products.length);
+                if (productList) {
+                    products.forEach((product, index) => {
+                        const item = document.createElement('div');
+                        item.className = 'product-item';
+                        item.style.animationDelay = `${index * 0.1}s`;
 
-                    const imgPath = `/img/products/${catKey}/${product.id}.jpg`;
-                    const productName = lang === 'tr' ? product.name_tr : product.name_en;
-                    const productDesc = lang === 'tr' ? product.desc_tr : product.desc_en;
+                        const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || 'Ürün');
+                        const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
 
-                    item.innerHTML = `
-                        <img class='product-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
-                        <div class='product-info'>
-                            <div class='product-header'>
-                                <div class='product-name'>${productName}</div>
-                                <div class='product-price'>${product.price}₺</div>
+                        console.log(`Ürün ${index + 1}:`, {
+                            lang: lang,
+                            name_tr: product.name_tr,
+                            name_en: product.name_en,
+                            selected_name: productName,
+                            desc_tr: product.desc_tr,
+                            desc_en: product.desc_en,
+                            selected_desc: productDesc
+                        });
+
+                        // JSON'dan image alanını al, yoksa default kullan
+                        const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
+
+                        item.innerHTML = `
+                            <img class='product-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
+                            <div class='product-info'>
+                                <div class='product-header'>
+                                    <div class='product-name'>${productName}</div>
+                                    <div class='product-price'>${product.price}₺</div>
+                                </div>
+                                <div class='product-desc'>${productDesc || ''}</div>
                             </div>
-                            <div class='product-desc'>${productDesc || ''}</div>
-                        </div>
-                    `;
+                        `;
 
-                    productList.appendChild(item);
-                });
+                        productList.appendChild(item);
+                    });
+
+                    console.log('Tüm ürünler render edildi');
+                } else {
+                    console.error('productList elementi bulunamadı!');
+                }
 
                 // Scroll pozisyonunu kontrol et
                 checkScrollPosition();
+                console.log('=== renderPage tamamlandı ===');
             }
 
             // Sayfa yüklendiğinde
@@ -1287,8 +1352,8 @@
                  });
 
                  const results = allProducts.filter(product => {
-                     const name = lang === 'tr' ? product.name_tr : product.name_en;
-                     const desc = lang === 'tr' ? product.desc_tr : product.desc_en;
+                     const name = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || '');
+                     const desc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
 
                      return name.toLowerCase().includes(query) ||
                             (desc && desc.toLowerCase().includes(query));
@@ -1321,10 +1386,12 @@
                          }
                      };
 
-                     const imgPath = `/img/products/${product.categoryKey}/${product.id}.jpg`;
-                     const productName = lang === 'tr' ? product.name_tr : product.name_en;
-                     const productDesc = lang === 'tr' ? product.desc_tr : product.desc_en;
-                     const categoryName = lang === 'tr' ? product.categoryName.name_tr : product.categoryName.name_en;
+                     const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || 'Ürün');
+                     const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
+                     const categoryName = lang === 'tr' ? product.categoryName.name_tr : (product.categoryName.name_en || product.categoryName.name_tr || 'Kategori');
+
+                     // JSON'dan image alanını al, yoksa default kullan
+                     const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
 
                      item.innerHTML = `
                          <img class='search-result-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
@@ -1354,7 +1421,7 @@
                  const productElements = document.querySelectorAll('.product-item');
                  for (let element of productElements) {
                      const img = element.querySelector('.product-img');
-                     if (img && img.src.includes(productId)) {
+                     if (img && (img.src.includes(productId) || img.src.includes(`/${productId}.jpg`) || img.src.includes(`/${productId}.jpeg`))) {
                          element.scrollIntoView({
                              behavior: 'smooth',
                              block: 'center'

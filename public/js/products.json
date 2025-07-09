@@ -73,7 +73,8 @@
           "name_en": "Buttered Bagel",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 40
+          "price": 40,
+          "image": "tereyagli-simit.jpeg"
         },
         {
           "id": 5,
@@ -121,7 +122,8 @@
           "name_en": "Croissant Sandwich",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 420
+          "price": 420,
+          "image": "kruvasan-sandwich.jpeg"
         },
         {
           "id": 11,
@@ -197,7 +199,8 @@
           "name_en": "Strawberry Mille-feuille",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 290
+          "price": 290,
+          "image": "cilekli-milfoy.jpeg"
         },
         {
           "id": 20,
@@ -221,7 +224,8 @@
           "name_en": "Strawberry Tart",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 290
+          "price": 290,
+          "image": "cilekli-tart.jpeg"
         },
         {
           "id": 23,
@@ -229,7 +233,8 @@
           "name_en": "Chocolate Eclair",
           "desc_tr": "Kg",
           "desc_en": "Kg",
-          "price": 850
+          "price": 850,
+          "image": "ekler.jpeg"
         },
         {
           "id": 24,
@@ -261,7 +266,8 @@
           "name_en": "San Sebastian",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 300
+          "price": 300,
+          "image": "san-sebastian.jpg"
         },
         {
           "id": 28,
@@ -301,7 +307,8 @@
           "name_en": "Chocolate Swedish Roll",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 290
+          "price": 290,
+          "image": "cikolatali-isvec-sarma.jpeg"
         },
         {
           "id": 33,
@@ -309,7 +316,8 @@
           "name_en": "White Chocolate Swedish Roll",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 290
+          "price": 290,
+          "image": "beyaz-isvec-sarma.jpeg"
         },
         {
           "id": 34,
@@ -317,7 +325,8 @@
           "name_en": "Ruby Cake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 310
+          "price": 310,
+          "image": "ruby-cake.jpeg"
         },
         {
           "id": 35,
@@ -349,7 +358,8 @@
           "name_en": "Strawberry Croissant",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 290
+          "price": 290,
+          "image": "cilekli-kruvasan.jpeg"
         },
         {
           "id": 39,
@@ -357,7 +367,8 @@
           "name_en": "Single Pistachio Cake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 340
+          "price": 340,
+          "image": "fistikli-tek-pasta.jpeg"
         },
         {
           "id": 40,
@@ -405,7 +416,8 @@
           "name_en": "Magnolia",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 260
+          "price": 260,
+          "image": "magnolya.jpg"
         },
         {
           "id": 46,
@@ -439,15 +451,17 @@
           "name_en": "Espresso",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 105
+          "price": 105,
+          "image": "espresso.jpg"
         },
         {
           "id": 50,
-          "name_tr": "Double espresso",
+          "name_tr": "Double Espresso",
           "name_en": "Double Espresso",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 135
+          "price": 135,
+          "image": "double-espresso.jpg"
         },
         {
           "id": 51,
@@ -455,7 +469,8 @@
           "name_en": "Americano",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 155
+          "price": 155,
+          "image": "americano.jpg"
         },
         {
           "id": 52,
@@ -463,7 +478,8 @@
           "name_en": "Latte",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 160
+          "price": 160,
+          "image": "cafe-latte.jpg"
         },
         {
           "id": 53,
@@ -471,19 +487,21 @@
           "name_en": "Cappuccino",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 160
+          "price": 160,
+          "image": "cappuccino.jpg"
         },
         {
           "id": 54,
-          "name_tr": "Filtre kahve",
+          "name_tr": "Filtre Kahve",
           "name_en": "Filter Coffee",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 155
+          "price": 155,
+          "image": "filtre-kahve.jpg"
         },
         {
           "id": 55,
-          "name_tr": "Sütlü filtre kahve",
+          "name_tr": "Sütlü Filtre Kahve",
           "name_en": "Milk Filter Coffee",
           "desc_tr": "Adet",
           "desc_en": "Piece",
@@ -495,23 +513,26 @@
           "name_en": "Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 195
+          "price": 195,
+          "image": "mocha.jpg"
         },
         {
           "id": 57,
-          "name_tr": "White chocolate Mocha",
+          "name_tr": "White Chocolate Mocha",
           "name_en": "White Chocolate Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 195
+          "price": 195,
+          "image": "white-mocha.jpg"
         },
         {
           "id": 58,
-          "name_tr": "Espresso macchiato",
+          "name_tr": "Espresso Macchiato",
           "name_en": "Espresso Macchiato",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 120
+          "price": 120,
+          "image": "espresso-macchiato.jpg"
         },
         {
           "id": 59,
@@ -519,7 +540,8 @@
           "name_en": "Turkish Coffee",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 110
+          "price": 110,
+          "image": "turk-kahvesi.jpg"
         },
         {
           "id": 60,
@@ -537,7 +559,8 @@
           "name_en": "Iced Latte",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 175
+          "price": 175,
+          "image": "ice-latte.jpg"
         },
         {
           "id": 62,
@@ -545,7 +568,8 @@
           "name_en": "Iced Americano",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 165
+          "price": 165,
+          "image": "ice-americano.jpg"
         },
         {
           "id": 63,
@@ -553,7 +577,8 @@
           "name_en": "Iced Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 205
+          "price": 205,
+          "image": "ice-mocha.jpg"
         },
         {
           "id": 64,
@@ -561,7 +586,8 @@
           "name_en": "Iced White Mocha",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 205
+          "price": 205,
+          "image": "ice-white-mocha.jpg"
         },
         {
           "id": 65,
@@ -579,7 +605,8 @@
           "name_en": "Tea",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 55
+          "price": 55,
+          "image": "cay.jpg"
         },
         {
           "id": 67,
@@ -587,7 +614,8 @@
           "name_en": "Cup Tea",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 80
+          "price": 80,
+          "image": "fincan-cay.jpg"
         }
       ],
       "soguk-icecekler": [
@@ -597,7 +625,8 @@
           "name_en": "Soda",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 70
+          "price": 70,
+          "image": "soda.jpg"
         },
         {
           "id": 69,
@@ -605,7 +634,8 @@
           "name_en": "Water",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 40
+          "price": 40,
+          "image": "su.jpg"
         },
         {
           "id": 70,
@@ -653,7 +683,8 @@
           "name_en": "Green Apple Frozen",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 240
+          "price": 240,
+          "image": "yesil-elmali-frozen.jpg"
         },
         {
           "id": 76,
@@ -661,7 +692,8 @@
           "name_en": "Mango Frozen",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 240
+          "price": 240,
+          "image": "mangolu-frozen.jpg"
         },
         {
           "id": 77,
@@ -677,7 +709,8 @@
           "name_en": "Strawberry Frozen",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 240
+          "price": 240,
+          "image": "cilekli-frozen.jpg"
         },
         {
           "id": 79,
@@ -693,7 +726,8 @@
           "name_en": "Mojito",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 270
+          "price": 270,
+          "image": "mojito.jpg"
         },
         {
           "id": 81,
@@ -733,7 +767,8 @@
           "name_en": "Strawberry Milkshake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 260
+          "price": 260,
+          "image": "cilekli-milkshake.jpg"
         },
         {
           "id": 86,
@@ -741,7 +776,8 @@
           "name_en": "Chocolate Milkshake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 260
+          "price": 260,
+          "image": "cikolatali-milkshake.jpg"
         },
         {
           "id": 87,
@@ -749,7 +785,8 @@
           "name_en": "Vanilla Milkshake",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 260
+          "price": 260,
+          "image": "vanilia-milkshake.jpg"
         },
         {
           "id": 88,
@@ -783,7 +820,8 @@
           "name_en": "Chicken Caesar Salad",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 380
+          "price": 380,
+          "image": "tavuklu-sezar-salata.jpeg"
         },
         {
           "id": 92,
@@ -807,7 +845,8 @@
           "name_en": "Granola",
           "desc_tr": "",
           "desc_en": "",
-          "price": 380
+          "price": 380,
+          "image": "granola.jpeg"
         },
         {
           "id": 95,
@@ -815,7 +854,8 @@
           "name_en": "Plain Omelette",
           "desc_tr": "Adet",
           "desc_en": "Piece",
-          "price": 290
+          "price": 290,
+          "image": "omlet.jpeg"
         },
         {
           "id": 96,
