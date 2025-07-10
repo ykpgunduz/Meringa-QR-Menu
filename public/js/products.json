@@ -847,39 +847,6 @@
           "desc_en": "",
           "price": 380,
           "image": "granola.jpeg"
-        },
-        {
-          "id": 95,
-          "name_tr": "Sade Omlet",
-          "name_en": "Plain Omelette",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290,
-          "image": "omlet.jpeg"
-        },
-        {
-          "id": 96,
-          "name_tr": "Paketli Atıştırmalık",
-          "name_en": "Packaged Snack",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 180
-        },
-        {
-          "id": 97,
-          "name_tr": "Soğuk Sandwich",
-          "name_en": "Cold Sandwich",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 360
-        },
-        {
-          "id": 98,
-          "name_tr": "Macaron",
-          "name_en": "Macaron",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
         }
       ]
     }
