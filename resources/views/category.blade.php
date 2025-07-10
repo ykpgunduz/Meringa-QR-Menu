@@ -175,7 +175,7 @@
         const params = new URLSearchParams(window.location.search);
         return params.get('lang');
     }
-    let lang = getLangFromUrl() || localStorage.getItem('lang') || 'tr';
+    let lang = getLangFromUrl() || 'tr';
     function setLang(newLang) {
         lang = newLang;
         localStorage.setItem('lang', lang);
@@ -189,7 +189,6 @@
     document.getElementById('lang-tr').onclick = () => setLang('tr');
     document.getElementById('lang-en').onclick = () => setLang('en');
     updateLangButtons();
-    localStorage.setItem('lang', lang);
 
     // Kategorileri products.json'dan çek ve göster
     let categories = [];
