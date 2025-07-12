@@ -1,853 +1,909 @@
 {
     "categories": [
-      {
-        "key": "kahvaltilik-atistirmalik",
-        "name_tr": "Atıştırmalık Kahvaltı",
-        "name_en": "Breakfast Snacks"
-      },
-      {
-        "key": "ekmekler",
-        "name_tr": "Ekmekler",
-        "name_en": "Breads"
-      },
-      {
-        "key": "tatlilar",
-        "name_tr": "Tatlılar",
-        "name_en": "Desserts"
-      },
-      {
-        "key": "sicak-kahveler",
-        "name_tr": "Sıcak Kahveler",
-        "name_en": "Hot Coffees"
-      },
-      {
-        "key": "soguk-kahveler",
-        "name_tr": "Soğuk Kahveler",
-        "name_en": "Cold Coffees"
-      },
-      {
-        "key": "sicak-icecekler",
-        "name_tr": "Sıcak İçecekler",
-        "name_en": "Hot Drinks"
-      },
-      {
-        "key": "soguk-icecekler",
-        "name_tr": "Soğuk İçecekler",
-        "name_en": "Cold Drinks"
-      },
-      {
-        "key": "bowl-salatalar",
-        "name_tr": "Bowl ve Salatalar",
-        "name_en": "Bowls & Salads"
-      }
+        {
+            "key": "kahvaltilik-atistirmalik",
+            "name_tr": "Atıştırmalık Kahvaltı",
+            "name_en": "Breakfast Snacks"
+        },
+        {
+            "key": "ekmekler",
+            "name_tr": "Ekmekler",
+            "name_en": "Breads"
+        },
+        {
+            "key": "tatlilar",
+            "name_tr": "Tatlılar",
+            "name_en": "Desserts"
+        },
+        {
+            "key": "sicak-kahveler",
+            "name_tr": "Sıcak Kahveler",
+            "name_en": "Hot Coffees"
+        },
+        {
+            "key": "soguk-kahveler",
+            "name_tr": "Soğuk Kahveler",
+            "name_en": "Cold Coffees"
+        },
+        {
+            "key": "sicak-icecekler",
+            "name_tr": "Sıcak İçecekler",
+            "name_en": "Hot Drinks"
+        },
+        {
+            "key": "soguk-icecekler",
+            "name_tr": "Soğuk İçecekler",
+            "name_en": "Cold Drinks"
+        },
+        {
+            "key": "bowl-salatalar",
+            "name_tr": "Bowl ve Salatalar",
+            "name_en": "Bowls & Salads"
+        }
     ],
     "products": {
-      "kahvaltilik-atistirmalik": [
-        {
-          "id": 1,
-          "name_tr": "Ispanaklı Labneli Fupas",
-          "name_en": "Spinach Labneh Fupas",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 30
-        },
-        {
-          "id": 2,
-          "name_tr": "Zeytinli Fupas",
-          "name_en": "Olive Fupas",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 30
-        },
-        {
-          "id": 3,
-          "name_tr": "Ev Poğaçası",
-          "name_en": "Homemade Pastry",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 40
-        },
-        {
-          "id": 4,
-          "name_tr": "Tereyağlı Simit",
-          "name_en": "Buttered Bagel",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 40,
-          "image": "tereyagli-simit.jpeg"
-        },
-        {
-          "id": 5,
-          "name_tr": "Kruvasan",
-          "name_en": "Croissant",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 140
-        },
-        {
-          "id": 6,
-          "name_tr": "Roll Kruvasan",
-          "name_en": "Roll Croissant",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 140
-        },
-        {
-          "id": 7,
-          "name_tr": "Küp Kruvasan",
-          "name_en": "Cube Croissant",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 140
-        },
-        {
-          "id": 8,
-          "name_tr": "Pao de Queijo",
-          "name_en": "Pao de Queijo",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 45
-        },
-        {
-          "id": 9,
-          "name_tr": "Sandwich",
-          "name_en": "Sandwich",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 360
-        },
-        {
-          "id": 10,
-          "name_tr": "Kruvasan Sandwich",
-          "name_en": "Croissant Sandwich",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 420,
-          "image": "kruvasan-sandwich.jpeg"
-        },
-        {
-          "id": 11,
-          "name_tr": "Focaccia Sandwich",
-          "name_en": "Focaccia Sandwich",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 420
-        }
-      ],
-      "ekmekler": [
-        {
-          "id": 12,
-          "name_tr": "Kızılbuğday",
-          "name_en": "Red Wheat",
-          "desc_tr": "420 gr",
-          "desc_en": "420 Gr",
-          "price": 90
-        },
-        {
-          "id": 13,
-          "name_tr": "Sade Fransız Baget",
-          "name_en": "Plain French Baguette",
-          "desc_tr": "350 gr",
-          "desc_en": "350 Gr",
-          "price": 40
-        },
-        {
-          "id": 14,
-          "name_tr": "Zeytinli Fransız Baget",
-          "name_en": "Olive French Baguette",
-          "desc_tr": "350 gr",
-          "desc_en": "350 Gr",
-          "price": 50
-        },
-        {
-          "id": 15,
-          "name_tr": "Chia",
-          "name_en": "Chia",
-          "desc_tr": "420 gr",
-          "desc_en": "420 Gr",
-          "price": 90
-        },
-        {
-          "id": 16,
-          "name_tr": "Malt",
-          "name_en": "Malt",
-          "desc_tr": "420 gr",
-          "desc_en": "420 Gr",
-          "price": 90
-        },
-        {
-          "id": 17,
-          "name_tr": "Focaccia",
-          "name_en": "Focaccia",
-          "desc_tr": "200 gr",
-          "desc_en": "200 Gr",
-          "price": 120
-        },
-        {
-          "id": 18,
-          "name_tr": "Dinkelberger",
-          "name_en": "Dinkelberger",
-          "desc_tr": "500 gr",
-          "desc_en": "500 Gr",
-          "price": 180
-        }
-      ],
-      "tatlilar": [
-        {
-          "id": 19,
-          "name_tr": "Çilekli Milföy",
-          "name_en": "Strawberry Mille-feuille",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290,
-          "image": "cilekli-milfoy.jpeg"
-        },
-        {
-          "id": 20,
-          "name_tr": "Tiramisu",
-          "name_en": "Tiramisu",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260
-        },
-        {
-          "id": 21,
-          "name_tr": "Frambuazlı Tart",
-          "name_en": "Raspberry Tart",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290
-        },
-        {
-          "id": 22,
-          "name_tr": "Çilekli Tart",
-          "name_en": "Strawberry Tart",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290,
-          "image": "cilekli-tart.jpeg"
-        },
-        {
-          "id": 23,
-          "name_tr": "Çikolatalı Ekler",
-          "name_en": "Chocolate Eclair",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850,
-          "image": "ekler.jpeg"
-        },
-        {
-          "id": 24,
-          "name_tr": "Nutella Ekler",
-          "name_en": "Nutella Eclair",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850
-        },
-        {
-          "id": 25,
-          "name_tr": "Lotus Ekler",
-          "name_en": "Lotus Eclair",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850
-        },
-        {
-          "id": 26,
-          "name_tr": "Angel Cake",
-          "name_en": "Angel Cake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290
-        },
-        {
-          "id": 27,
-          "name_tr": "San Sebastian",
-          "name_en": "San Sebastian",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 300,
-          "image": "san-sebastian.jpg"
-        },
-        {
-          "id": 28,
-          "name_tr": "Lotus Cheese Cake",
-          "name_en": "Lotus CheeseCake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290
-        },
-        {
-          "id": 29,
-          "name_tr": "Nutella Cheese Cake",
-          "name_en": "Nutella CheeseCake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290
-        },
-        {
-          "id": 30,
-          "name_tr": "Budapeşte",
-          "name_en": "Budapest",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290
-        },
-        {
-          "id": 31,
-          "name_tr": "Deluxe Cake",
-          "name_en": "Deluxe Cake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290
-        },
-        {
-          "id": 32,
-          "name_tr": "Çikolatalı İsveç Sarma",
-          "name_en": "Chocolate Swedish Roll",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290,
-          "image": "cikolatali-isvec-sarma.jpeg"
-        },
-        {
-          "id": 33,
-          "name_tr": "Beyaz Çikolatalı İsveç Sarma",
-          "name_en": "White Chocolate Swedish Roll",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290,
-          "image": "beyaz-isvec-sarma.jpeg"
-        },
-        {
-          "id": 34,
-          "name_tr": "Ruby Cake",
-          "name_en": "Ruby Cake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 310,
-          "image": "ruby-cake.jpeg"
-        },
-        {
-          "id": 35,
-          "name_tr": "Şelale",
-          "name_en": "Waterfall",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850
-        },
-        {
-          "id": 36,
-          "name_tr": "Nutella Browni",
-          "name_en": "Nutella Brownie",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
-        },
-        {
-          "id": 37,
-          "name_tr": "Lotus Browni",
-          "name_en": "Lotus Brownie",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
-        },
-        {
-          "id": 38,
-          "name_tr": "Çilekli kruvasan",
-          "name_en": "Strawberry Croissant",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 290,
-          "image": "cilekli-kruvasan.jpeg"
-        },
-        {
-          "id": 39,
-          "name_tr": "Fıstıklı Tek Pasta",
-          "name_en": "Single Pistachio Cake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 340,
-          "image": "fistikli-tek-pasta.jpeg"
-        },
-        {
-          "id": 40,
-          "name_tr": "Turta No: 1",
-          "name_en": "Torte No: 1",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 1250
-        },
-        {
-          "id": 41,
-          "name_tr": "Karamel Çikolata Ekler",
-          "name_en": "Caramel Chocolate Eclair",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850
-        },
-        {
-          "id": 42,
-          "name_tr": "Fıstıklı Ekler",
-          "name_en": "Pistachio Eclair",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850
-        },
-        {
-          "id": 43,
-          "name_tr": "Tiramisu Ekler",
-          "name_en": "Tiramisu Eclair",
-          "desc_tr": "Kg",
-          "desc_en": "Kg",
-          "price": 850
-        },
-        {
-          "id": 44,
-          "name_tr": "Sütlaç",
-          "name_en": "Rice Pudding",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260
-        },
-        {
-          "id": 45,
-          "name_tr": "Magnolia",
-          "name_en": "Magnolia",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260,
-          "image": "magnolya.jpg"
-        },
-        {
-          "id": 46,
-          "name_tr": "Profiterol",
-          "name_en": "Profiterole",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
-        },
-        {
-          "id": 47,
-          "name_tr": "Macaron",
-          "name_en": "Macaron",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
-        },
-        {
-          "id": 48,
-          "name_tr": "Dubai Tek Pasta",
-          "name_en": "Dubai Single Cake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 400
-        }
-      ],
-      "sicak-kahveler": [
-        {
-          "id": 49,
-          "name_tr": "Espresso",
-          "name_en": "Espresso",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 105,
-          "image": "espresso.jpg"
-        },
-        {
-          "id": 50,
-          "name_tr": "Double Espresso",
-          "name_en": "Double Espresso",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 135,
-          "image": "double-espresso.jpg"
-        },
-        {
-          "id": 51,
-          "name_tr": "Americano",
-          "name_en": "Americano",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 155,
-          "image": "americano.jpg"
-        },
-        {
-          "id": 52,
-          "name_tr": "Latte",
-          "name_en": "Latte",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 160,
-          "image": "cafe-latte.jpg"
-        },
-        {
-          "id": 53,
-          "name_tr": "Cappuccino",
-          "name_en": "Cappuccino",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 160,
-          "image": "cappuccino.jpg"
-        },
-        {
-          "id": 54,
-          "name_tr": "Filtre Kahve",
-          "name_en": "Filter Coffee",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 155,
-          "image": "filtre-kahve.jpg"
-        },
-        {
-          "id": 55,
-          "name_tr": "Sütlü Filtre Kahve",
-          "name_en": "Milk Filter Coffee",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 170
-        },
-        {
-          "id": 56,
-          "name_tr": "Mocha",
-          "name_en": "Mocha",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 195,
-          "image": "mocha.jpg"
-        },
-        {
-          "id": 57,
-          "name_tr": "White Chocolate Mocha",
-          "name_en": "White Chocolate Mocha",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 195,
-          "image": "white-mocha.jpg"
-        },
-        {
-          "id": 58,
-          "name_tr": "Espresso Macchiato",
-          "name_en": "Espresso Macchiato",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 120,
-          "image": "espresso-macchiato.jpg"
-        },
-        {
-          "id": 59,
-          "name_tr": "Türk Kahvesi",
-          "name_en": "Turkish Coffee",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 110,
-          "image": "turk-kahvesi.jpg"
-        },
-        {
-          "id": 60,
-          "name_tr": "Aromalar",
-          "name_en": "Flavors",
-          "desc_tr": "Çikolata, Fındık, Karamel, Vanilya, Beyaz Çikolata.",
-          "desc_en": "Chocolate, Hazelnut, Caramel, Vanilla, White Chocolate.",
-          "price": 40
-        }
-      ],
-      "soguk-kahveler": [
-        {
-          "id": 61,
-          "name_tr": "Ice Latte",
-          "name_en": "Iced Latte",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 175,
-          "image": "ice-latte.jpg"
-        },
-        {
-          "id": 62,
-          "name_tr": "Ice Americano",
-          "name_en": "Iced Americano",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 165,
-          "image": "ice-americano.jpg"
-        },
-        {
-          "id": 63,
-          "name_tr": "Ice Mocha",
-          "name_en": "Iced Mocha",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 205,
-          "image": "ice-mocha.jpg"
-        },
-        {
-          "id": 64,
-          "name_tr": "Ice White Mocha",
-          "name_en": "Iced White Mocha",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 205,
-          "image": "ice-white-mocha.jpg"
-        },
-        {
-          "id": 65,
-          "name_tr": "Aromalar",
-          "name_en": "Flavors",
-          "desc_tr": "Çikolata, Fındık, Karamel, Vanilya, Beyaz Çikolata.",
-          "desc_en": "Chocolate, Hazelnut, Caramel, Vanilla, White Chocolate.",
-          "price": 40
-        }
-      ],
-      "sicak-icecekler": [
-        {
-          "id": 66,
-          "name_tr": "Çay",
-          "name_en": "Tea",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 55,
-          "image": "cay.jpg"
-        },
-        {
-          "id": 67,
-          "name_tr": "Fincan çay",
-          "name_en": "Cup Tea",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 80,
-          "image": "fincan-cay.jpg"
-        }
-      ],
-      "soguk-icecekler": [
-        {
-          "id": 68,
-          "name_tr": "Soda",
-          "name_en": "Soda",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 70,
-          "image": "soda.jpg"
-        },
-        {
-          "id": 69,
-          "name_tr": "Su",
-          "name_en": "Water",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 40,
-          "image": "su.jpg"
-        },
-        {
-          "id": 70,
-          "name_tr": "Gazoz",
-          "name_en": "Soda Pop",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 70
-        },
-        {
-          "id": 71,
-          "name_tr": "Meyve suyu",
-          "name_en": "Fruit Juice",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 120
-        },
-        {
-          "id": 72,
-          "name_tr": "Fuse Tea Limon",
-          "name_en": "Fuse Tea Lemon",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 80
-        },
-        {
-            "id": 73,
-            "name_tr": "Fuse Tea Şeftali",
-            "name_en": "Fuse Tea Peach",
-            "desc_tr": "Adet",
-            "desc_en": "Piece",
-            "price": 80
-        },
-        {
-          "id": 74,
-          "name_tr": "Limonata",
-          "name_en": "Lemonade",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 180
-        },
-        {
-          "id": 75,
-          "name_tr": "Yeşil Elma Frozen",
-          "name_en": "Green Apple Frozen",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240,
-          "image": "yesil-elmali-frozen.jpg"
-        },
-        {
-          "id": 76,
-          "name_tr": "Mango Frozen",
-          "name_en": "Mango Frozen",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240,
-          "image": "mangolu-frozen.jpg"
-        },
-        {
-          "id": 77,
-          "name_tr": "Ananas Frozen",
-          "name_en": "Pineapple Frozen",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
-        },
-        {
-          "id": 78,
-          "name_tr": "Çilek Frozen",
-          "name_en": "Strawberry Frozen",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240,
-          "image": "cilekli-frozen.jpg"
-        },
-        {
-          "id": 79,
-          "name_tr": "Orman Meyve Frozen",
-          "name_en": "Forest Fruit Frozen",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 240
-        },
-        {
-          "id": 80,
-          "name_tr": "Mojito",
-          "name_en": "Mojito",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 270,
-          "image": "mojito.jpg"
-        },
-        {
-          "id": 81,
-          "name_tr": "Coollime",
-          "name_en": "Coollime",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 270
-        },
-        {
-          "id": 82,
-          "name_tr": "Hibiscus",
-          "name_en": "Hibiscus",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 270
-        },
-        {
-          "id": 83,
-          "name_tr": "Lotus Latte",
-          "name_en": "Lotus Latte",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 220
-        },
-        {
-          "id": 84,
-          "name_tr": "Ice Lotus Latte",
-          "name_en": "Ice Lotus Latte",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 220
-        },
-        {
-          "id": 85,
-          "name_tr": "Çilekli Milkshake",
-          "name_en": "Strawberry Milkshake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260,
-          "image": "cilekli-milkshake.jpg"
-        },
-        {
-          "id": 86,
-          "name_tr": "Çikolatalı Milkshake",
-          "name_en": "Chocolate Milkshake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260,
-          "image": "cikolatali-milkshake.jpg"
-        },
-        {
-          "id": 87,
-          "name_tr": "Vanilya Milkshake",
-          "name_en": "Vanilla Milkshake",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260,
-          "image": "vanilia-milkshake.jpg"
-        },
-        {
-          "id": 88,
-          "name_tr": "Yaban Mersin Smoothie",
-          "name_en": "Blueberry Smoothie",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260
-        },
-        {
-          "id": 89,
-          "name_tr": "Çilek Smoothie",
-          "name_en": "Strawberry Smoothie",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260
-        },
-        {
-          "id": 90,
-          "name_tr": "Çikolata Smoothie",
-          "name_en": "Chocolate Smoothie",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 260
-        }
-      ],
-      "bowl-salatalar": [
-        {
-          "id": 91,
-          "name_tr": "Tavuklu Sezar Salata",
-          "name_en": "Chicken Caesar Salad",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 380,
-          "image": "tavuklu-sezar-salata.jpeg"
-        },
-        {
-          "id": 92,
-          "name_tr": "Somon Fümeli Salata",
-          "name_en": "Smoked Salmon Salad",
-          "desc_tr": "Adet",
-          "desc_en": "Piece",
-          "price": 400
-        },
-        {
-          "id": 93,
-          "name_tr": "Köfteli bowl",
-          "name_en": "Meatball Bowl",
-          "desc_tr": "",
-          "desc_en": "",
-          "price": 450
-        },
-        {
-          "id": 94,
-          "name_tr": "Granola",
-          "name_en": "Granola",
-          "desc_tr": "",
-          "desc_en": "",
-          "price": 380,
-          "image": "granola.jpeg"
-        }
-      ]
+        "kahvaltilik-atistirmalik": [
+            {
+                "id": 1,
+                "name_tr": "Ispanaklı Labneli Fupas",
+                "name_en": "Spinach Labneh Fupas",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 30
+            },
+            {
+                "id": 2,
+                "name_tr": "Zeytinli Fupas",
+                "name_en": "Olive Fupas",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 30
+            },
+            {
+                "id": 3,
+                "name_tr": "Ev Poğaçası",
+                "name_en": "Homemade Pastry",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 40
+            },
+            {
+                "id": 4,
+                "name_tr": "Tereyağlı Simit",
+                "name_en": "Buttered Bagel",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 40,
+                "image": "tereyagli-simit.jpeg"
+            },
+            {
+                "id": 5,
+                "name_tr": "Kruvasan",
+                "name_en": "Croissant",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 140
+            },
+            {
+                "id": 6,
+                "name_tr": "Roll Kruvasan",
+                "name_en": "Roll Croissant",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 140
+            },
+            {
+                "id": 7,
+                "name_tr": "Küp Kruvasan",
+                "name_en": "Cube Croissant",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 140
+            },
+            {
+                "id": 8,
+                "name_tr": "Pao de Queijo",
+                "name_en": "Pao de Queijo",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 45
+            },
+            {
+                "id": 9,
+                "name_tr": "Sandwich",
+                "name_en": "Sandwich",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 360
+            },
+            {
+                "id": 10,
+                "name_tr": "Kruvasan Sandwich",
+                "name_en": "Croissant Sandwich",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 420,
+                "image": "kruvasan-sandwich.jpeg"
+            },
+            {
+                "id": 11,
+                "name_tr": "Focaccia Sandwich",
+                "name_en": "Focaccia Sandwich",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 420
+            },
+            {
+                "id": 12,
+                "name_tr": "Saçaklı Poğaça",
+                "name_en": "Sacakli Pogaca",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 60
+            },
+            {
+                "id": 13,
+                "name_tr": "Şarküteri Tabağı",
+                "name_en": "Charcuterie Plate",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 540
+            },
+            {
+                "id": 14,
+                "name_tr": "Poğaça Tabağı",
+                "name_en": "Pogaca Plate",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 460
+            },
+            {
+                "id": 15,
+                "name_tr": "Peynirli Omlet",
+                "name_en": "Cheese Omelette",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 320
+            },
+            {
+                "id": 16,
+                "name_tr": "Avokadolu Omlet",
+                "name_en": "Avocado Omelette",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 360
+            },
+            {
+                "id": 17,
+                "name_tr": "Sade Omlet",
+                "name_en": "Plain Omelette",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            }
+        ],
+        "ekmekler": [
+            {
+                "id": 18,
+                "name_tr": "Kızılbuğday",
+                "name_en": "Red Wheat",
+                "desc_tr": "420 gr",
+                "desc_en": "420 Gr",
+                "price": 90
+            },
+            {
+                "id": 19,
+                "name_tr": "Sade Fransız Baget",
+                "name_en": "Plain French Baguette",
+                "desc_tr": "350 gr",
+                "desc_en": "350 Gr",
+                "price": 40
+            },
+            {
+                "id": 20,
+                "name_tr": "Zeytinli Fransız Baget",
+                "name_en": "Olive French Baguette",
+                "desc_tr": "350 gr",
+                "desc_en": "350 Gr",
+                "price": 50
+            },
+            {
+                "id": 21,
+                "name_tr": "Chia",
+                "name_en": "Chia",
+                "desc_tr": "420 gr",
+                "desc_en": "420 Gr",
+                "price": 90
+            },
+            {
+                "id": 22,
+                "name_tr": "Malt",
+                "name_en": "Malt",
+                "desc_tr": "420 gr",
+                "desc_en": "420 Gr",
+                "price": 90
+            },
+            {
+                "id": 23,
+                "name_tr": "Focaccia",
+                "name_en": "Focaccia",
+                "desc_tr": "200 gr",
+                "desc_en": "200 Gr",
+                "price": 120
+            },
+            {
+                "id": 24,
+                "name_tr": "Dinkelberger",
+                "name_en": "Dinkelberger",
+                "desc_tr": "500 gr",
+                "desc_en": "500 Gr",
+                "price": 180
+            }
+        ],
+        "tatlilar": [
+            {
+                "id": 25,
+                "name_tr": "Çilekli Milföy",
+                "name_en": "Strawberry Mille-feuille",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290,
+                "image": "cilekli-milfoy.jpeg"
+            },
+            {
+                "id": 26,
+                "name_tr": "Tiramisu",
+                "name_en": "Tiramisu",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260
+            },
+            {
+                "id": 27,
+                "name_tr": "Frambuazlı Tart",
+                "name_en": "Raspberry Tart",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            },
+            {
+                "id": 28,
+                "name_tr": "Çilekli Tart",
+                "name_en": "Strawberry Tart",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290,
+                "image": "cilekli-tart.jpeg"
+            },
+            {
+                "id": 29,
+                "name_tr": "Çikolatalı Ekler",
+                "name_en": "Chocolate Eclair",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850,
+                "image": "ekler.jpeg"
+            },
+            {
+                "id": 30,
+                "name_tr": "Nutella Ekler",
+                "name_en": "Nutella Eclair",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850
+            },
+            {
+                "id": 31,
+                "name_tr": "Lotus Ekler",
+                "name_en": "Lotus Eclair",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850
+            },
+            {
+                "id": 32,
+                "name_tr": "Angel Cake",
+                "name_en": "Angel Cake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            },
+            {
+                "id": 33,
+                "name_tr": "San Sebastian",
+                "name_en": "San Sebastian",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 300,
+                "image": "san-sebastian.jpg"
+            },
+            {
+                "id": 34,
+                "name_tr": "Lotus Cheese Cake",
+                "name_en": "Lotus CheeseCake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            },
+            {
+                "id": 35,
+                "name_tr": "Nutella Cheese Cake",
+                "name_en": "Nutella CheeseCake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            },
+            {
+                "id": 36,
+                "name_tr": "Budapeşte",
+                "name_en": "Budapest",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            },
+            {
+                "id": 37,
+                "name_tr": "Deluxe Cake",
+                "name_en": "Deluxe Cake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290
+            },
+            {
+                "id": 38,
+                "name_tr": "Çikolatalı İsveç Sarma",
+                "name_en": "Chocolate Swedish Roll",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290,
+                "image": "cikolatali-isvec-sarma.jpeg"
+            },
+            {
+                "id": 39,
+                "name_tr": "Beyaz Çikolatalı İsveç Sarma",
+                "name_en": "White Chocolate Swedish Roll",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290,
+                "image": "beyaz-isvec-sarma.jpeg"
+            },
+            {
+                "id": 40,
+                "name_tr": "Ruby Cake",
+                "name_en": "Ruby Cake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 310,
+                "image": "ruby-cake.jpeg"
+            },
+            {
+                "id": 41,
+                "name_tr": "Şelale",
+                "name_en": "Waterfall",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850
+            },
+            {
+                "id": 42,
+                "name_tr": "Nutella Browni",
+                "name_en": "Nutella Brownie",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240
+            },
+            {
+                "id": 43,
+                "name_tr": "Lotus Browni",
+                "name_en": "Lotus Brownie",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240
+            },
+            {
+                "id": 44,
+                "name_tr": "Çilekli kruvasan",
+                "name_en": "Strawberry Croissant",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 290,
+                "image": "cilekli-kruvasan.jpeg"
+            },
+            {
+                "id": 45,
+                "name_tr": "Fıstıklı Tek Pasta",
+                "name_en": "Single Pistachio Cake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 340,
+                "image": "fistikli-tek-pasta.jpeg"
+            },
+            {
+                "id": 46,
+                "name_tr": "Turta No: 1",
+                "name_en": "Torte No: 1",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 1250
+            },
+            {
+                "id": 47,
+                "name_tr": "Karamel Çikolata Ekler",
+                "name_en": "Caramel Chocolate Eclair",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850
+            },
+            {
+                "id": 48,
+                "name_tr": "Fıstıklı Ekler",
+                "name_en": "Pistachio Eclair",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850
+            },
+            {
+                "id": 49,
+                "name_tr": "Tiramisu Ekler",
+                "name_en": "Tiramisu Eclair",
+                "desc_tr": "Kg",
+                "desc_en": "Kg",
+                "price": 850
+            },
+            {
+                "id": 50,
+                "name_tr": "Sütlaç",
+                "name_en": "Rice Pudding",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260
+            },
+            {
+                "id": 51,
+                "name_tr": "Magnolia",
+                "name_en": "Magnolia",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260,
+                "image": "magnolya.jpg"
+            },
+            {
+                "id": 52,
+                "name_tr": "Profiterol",
+                "name_en": "Profiterole",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240
+            },
+            {
+                "id": 53,
+                "name_tr": "Macaron",
+                "name_en": "Macaron",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240
+            },
+            {
+                "id": 54,
+                "name_tr": "Dubai Tek Pasta",
+                "name_en": "Dubai Single Cake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 400
+            },
+            {
+                "id": 55,
+                "name_tr": "Karpatka",
+                "name_en": "Karpatka",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 310
+            }
+        ],
+        "sicak-kahveler": [
+            {
+                "id": 56,
+                "name_tr": "Espresso",
+                "name_en": "Espresso",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 105,
+                "image": "espresso.jpg"
+            },
+            {
+                "id": 57,
+                "name_tr": "Double Espresso",
+                "name_en": "Double Espresso",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 135,
+                "image": "double-espresso.jpg"
+            },
+            {
+                "id": 58,
+                "name_tr": "Americano",
+                "name_en": "Americano",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 155,
+                "image": "americano.jpg"
+            },
+            {
+                "id": 59,
+                "name_tr": "Latte",
+                "name_en": "Latte",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 160,
+                "image": "cafe-latte.jpg"
+            },
+            {
+                "id": 60,
+                "name_tr": "Cappuccino",
+                "name_en": "Cappuccino",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 160,
+                "image": "cappuccino.jpg"
+            },
+            {
+                "id": 61,
+                "name_tr": "Filtre Kahve",
+                "name_en": "Filter Coffee",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 155,
+                "image": "filtre-kahve.jpg"
+            },
+            {
+                "id": 62,
+                "name_tr": "Sütlü Filtre Kahve",
+                "name_en": "Milk Filter Coffee",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 170
+            },
+            {
+                "id": 63,
+                "name_tr": "Mocha",
+                "name_en": "Mocha",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 195,
+                "image": "mocha.jpg"
+            },
+            {
+                "id": 64,
+                "name_tr": "White Chocolate Mocha",
+                "name_en": "White Chocolate Mocha",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 195,
+                "image": "white-mocha.jpg"
+            },
+            {
+                "id": 65,
+                "name_tr": "Espresso Macchiato",
+                "name_en": "Espresso Macchiato",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 120,
+                "image": "espresso-macchiato.jpg"
+            },
+            {
+                "id": 66,
+                "name_tr": "Türk Kahvesi",
+                "name_en": "Turkish Coffee",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 110,
+                "image": "turk-kahvesi.jpg"
+            },
+            {
+                "id": 67,
+                "name_tr": "Aromalar",
+                "name_en": "Flavors",
+                "desc_tr": "Çikolata, Fındık, Karamel, Vanilya, Beyaz Çikolata.",
+                "desc_en": "Chocolate, Hazelnut, Caramel, Vanilla, White Chocolate.",
+                "price": 40
+            }
+        ],
+        "soguk-kahveler": [
+            {
+                "id": 68,
+                "name_tr": "Ice Latte",
+                "name_en": "Iced Latte",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 175,
+                "image": "ice-latte.jpg"
+            },
+            {
+                "id": 69,
+                "name_tr": "Ice Americano",
+                "name_en": "Iced Americano",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 165,
+                "image": "ice-americano.jpg"
+            },
+            {
+                "id": 70,
+                "name_tr": "Ice Mocha",
+                "name_en": "Iced Mocha",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 205,
+                "image": "ice-mocha.jpg"
+            },
+            {
+                "id": 71,
+                "name_tr": "Ice White Mocha",
+                "name_en": "Iced White Mocha",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 205,
+                "image": "ice-white-mocha.jpg"
+            },
+            {
+                "id": 72,
+                "name_tr": "Aromalar",
+                "name_en": "Flavors",
+                "desc_tr": "Çikolata, Fındık, Karamel, Vanilya, Beyaz Çikolata.",
+                "desc_en": "Chocolate, Hazelnut, Caramel, Vanilla, White Chocolate.",
+                "price": 40
+            }
+        ],
+        "sicak-icecekler": [
+            {
+                "id": 73,
+                "name_tr": "Çay",
+                "name_en": "Tea",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 55,
+                "image": "cay.jpg"
+            },
+            {
+                "id": 74,
+                "name_tr": "Fincan çay",
+                "name_en": "Cup Tea",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 80,
+                "image": "fincan-cay.jpg"
+            }
+        ],
+        "soguk-icecekler": [
+            {
+                "id": 75,
+                "name_tr": "Soda",
+                "name_en": "Soda",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 70,
+                "image": "soda.jpg"
+            },
+            {
+                "id": 76,
+                "name_tr": "Su",
+                "name_en": "Water",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 40,
+                "image": "su.jpg"
+            },
+            {
+                "id": 77,
+                "name_tr": "Gazoz",
+                "name_en": "Soda Pop",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 70
+            },
+            {
+                "id": 78,
+                "name_tr": "Meyve suyu",
+                "name_en": "Fruit Juice",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 120
+            },
+            {
+                "id": 79,
+                "name_tr": "Fuse Tea Limon",
+                "name_en": "Fuse Tea Lemon",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 80
+            },
+            {
+                "id": 80,
+                "name_tr": "Fuse Tea Şeftali",
+                "name_en": "Fuse Tea Peach",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 80
+            },
+            {
+                "id": 81,
+                "name_tr": "Limonata",
+                "name_en": "Lemonade",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 180
+            },
+            {
+                "id": 82,
+                "name_tr": "Yeşil Elma Frozen",
+                "name_en": "Green Apple Frozen",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240,
+                "image": "yesil-elmali-frozen.jpg"
+            },
+            {
+                "id": 83,
+                "name_tr": "Mango Frozen",
+                "name_en": "Mango Frozen",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240,
+                "image": "mangolu-frozen.jpg"
+            },
+            {
+                "id": 84,
+                "name_tr": "Ananas Frozen",
+                "name_en": "Pineapple Frozen",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240
+            },
+            {
+                "id": 85,
+                "name_tr": "Çilek Frozen",
+                "name_en": "Strawberry Frozen",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240,
+                "image": "cilekli-frozen.jpg"
+            },
+            {
+                "id": 86,
+                "name_tr": "Orman Meyve Frozen",
+                "name_en": "Forest Fruit Frozen",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 240
+            },
+            {
+                "id": 87,
+                "name_tr": "Mojito",
+                "name_en": "Mojito",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 270,
+                "image": "mojito.jpg"
+            },
+            {
+                "id": 88,
+                "name_tr": "Coollime",
+                "name_en": "Coollime",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 270
+            },
+            {
+                "id": 89,
+                "name_tr": "Hibiscus",
+                "name_en": "Hibiscus",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 270
+            },
+            {
+                "id": 90,
+                "name_tr": "Lotus Latte",
+                "name_en": "Lotus Latte",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 220
+            },
+            {
+                "id": 91,
+                "name_tr": "Ice Lotus Latte",
+                "name_en": "Ice Lotus Latte",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 220
+            },
+            {
+                "id": 92,
+                "name_tr": "Çilekli Milkshake",
+                "name_en": "Strawberry Milkshake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260,
+                "image": "cilekli-milkshake.jpg"
+            },
+            {
+                "id": 93,
+                "name_tr": "Çikolatalı Milkshake",
+                "name_en": "Chocolate Milkshake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260,
+                "image": "cikolatali-milkshake.jpg"
+            },
+            {
+                "id": 94,
+                "name_tr": "Vanilya Milkshake",
+                "name_en": "Vanilla Milkshake",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260,
+                "image": "vanilia-milkshake.jpg"
+            },
+            {
+                "id": 95,
+                "name_tr": "Yaban Mersin Smoothie",
+                "name_en": "Blueberry Smoothie",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260
+            },
+            {
+                "id": 96,
+                "name_tr": "Çilek Smoothie",
+                "name_en": "Strawberry Smoothie",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260
+            },
+            {
+                "id": 97,
+                "name_tr": "Çikolata Smoothie",
+                "name_en": "Chocolate Smoothie",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 260
+            }
+        ],
+        "bowl-salatalar": [
+            {
+                "id": 98,
+                "name_tr": "Tavuklu Sezar Salata",
+                "name_en": "Chicken Caesar Salad",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 380,
+                "image": "tavuklu-sezar-salata.jpeg"
+            },
+            {
+                "id": 99,
+                "name_tr": "Somon Fümeli Salata",
+                "name_en": "Smoked Salmon Salad",
+                "desc_tr": "Adet",
+                "desc_en": "Piece",
+                "price": 400
+            },
+            {
+                "id": 100,
+                "name_tr": "Köfteli bowl",
+                "name_en": "Meatball Bowl",
+                "desc_tr": "",
+                "desc_en": "",
+                "price": 450
+            },
+            {
+                "id": 101,
+                "name_tr": "Granola",
+                "name_en": "Granola",
+                "desc_tr": "",
+                "desc_en": "",
+                "price": 380,
+                "image": "granola.jpeg"
+            }
+        ]
     }
-  }
+}
