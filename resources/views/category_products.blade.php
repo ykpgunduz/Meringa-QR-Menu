@@ -13,7 +13,6 @@
         }
 
         body {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             min-height: 100vh;
             line-height: 1.6;
@@ -27,6 +26,7 @@
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
+            margin-bottom: 0;
         }
 
         .header {
@@ -564,20 +564,26 @@
         /* Footer Styles */
         .footer {
             background: #fff;
-            color: #333;
             padding: 0;
-            margin-top: 30px;
-            border-top: 1px solid #e5e5e5;
+            margin-top: 0;
         }
 
         .footer-content {
-            max-width: 800px;
+            max-width: 420px;
             margin: 0 auto;
-            padding: 30px 20px 20px;
+            padding: 36px 28px 28px 28px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 25px;
+            gap: 28px;
+            background: #fff;
+            border-radius: 0;
+            box-shadow: none;
+            position: relative;
+            z-index: 2;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            border: none;
         }
 
         .footer-section {
@@ -585,6 +591,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            width: 100%;
         }
 
         .footer-logo {
@@ -595,9 +602,10 @@
         }
 
         .footer-logo-img {
-            width: auto;
-            height: 80px;
-            border-radius: 12px;
+            width: 110px;
+            height: auto;
+            border-radius: 16px;
+            margin-bottom: 12px;
         }
 
         .footer-title {
@@ -626,26 +634,39 @@
         .footer-contact {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            align-items: center;
+            gap: 10px;
+            align-items: flex-start;
+            width: 100%;
+            margin: 0 auto 8px auto;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #666;
-            margin-bottom: 8px;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            text-align: center;
-            max-width: 500px;
+            color: #1a1a1a;
+            margin-bottom: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            font-weight: 500;
+            width: 100%;
+            background: rgba(255,255,255,0.12);
+            border-radius: 12px;
+            padding: 7px 12px;
+            margin-bottom: 6px;
+            box-shadow: 0 1.5px 8px rgba(212,175,55,0.07);
         }
 
         .contact-item svg {
             color: #d4af37;
             flex-shrink: 0;
             margin-top: 2px;
+            margin-right: 2px;
+            background: #fffbe6;
+            border-radius: 50%;
+            padding: 3px;
+            box-shadow: 0 1.5px 8px rgba(212,175,55,0.13);
         }
 
         .footer-hours {
@@ -681,123 +702,124 @@
         .footer-social {
             display: flex;
             flex-direction: row;
-            gap: 15px;
+            gap: 14px;
             justify-content: center;
             align-items: center;
             width: 100%;
-            max-width: 300px;
+            max-width: 320px;
             flex-wrap: nowrap;
+            margin-top: 10px;
         }
 
         .social-link {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 7px;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            width: 130px;
+            padding: 10px 18px;
+            border-radius: 22px;
+            transition: all 0.2s cubic-bezier(.4,0,.2,1);
+            font-size: 1rem;
+            width: auto;
+            min-width: 110px;
             justify-content: center;
-            font-weight: 500;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-weight: 600;
+            box-shadow: 0 1.5px 8px rgba(212,175,55,0.10);
             flex-shrink: 0;
+            border: 1.5px solid #d4af37;
+            background: #fffbe6;
+            color: #1a1a1a;
         }
 
         .social-link.instagram {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            color: #fff;
-            border: none;
+            background: linear-gradient(90deg, #fffbe6 0%, #f8e7b3 100%);
+            color: #b88900;
+            border: 1.5px solid #d4af37;
         }
 
         .social-link.instagram:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 4px 24px rgba(212,175,55,0.18);
+            background: linear-gradient(90deg, #fffbe6 0%, #ffe066 100%);
+            color: #a67c00;
         }
 
         .social-link.maps {
-            background: #4285f4;
+            background: #181818;
             color: #fff;
-            border: none;
+            border: 1.5px solid #181818;
         }
 
         .social-link.maps:hover {
-            background: #3367d6;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+            background: #000;
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            color: #ffd700;
         }
 
-        /* Reklam Çubuğu */
+        /* Harpy Social Footer */
         .ad-bar {
-            background: #000;
-            padding: 10px 0;
+            background: #054ba1;
             text-align: center;
+            padding: 5px;
             position: relative;
             overflow: hidden;
-            min-height: 40px;
+            min-height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .ad-bar::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(120deg, rgba(255,255,255,0.10) 0%, rgba(200,200,200,0.13) 40%, rgba(255,255,255,0.10) 100%);
-            opacity: 0.7;
+            background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 40%, rgba(255,255,255,0.15) 100%);
+            opacity: 0.8;
             pointer-events: none;
             z-index: 1;
-            animation: shimmerBar 3.5s linear infinite;
+            animation: shimmerBar 4s linear infinite;
             background-size: 200% 100%;
         }
+
         @keyframes shimmerBar {
             0% { background-position: 200% 0; }
             100% { background-position: -200% 0; }
         }
-        .ad-content.harpy-ad {
+
+                        .ad-content.harpy-ad {
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
-            gap: 10px;
             position: relative;
             z-index: 2;
+            transition: all 0.3s ease;
         }
-        .harpy-logo {
-            height: 64px;
+
+        .ad-content.harpy-ad:hover {
+            transform: translateY(-1px);
+        }
+
+        .harpy-credit {
+            height: 70px;
             width: auto;
             display: inline-block;
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+            transition: all 0.3s ease;
         }
+
+        .ad-content.harpy-ad:hover .harpy-credit {
+            transform: scale(1.03);
+            filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.3));
+        }
+
         .harpy-link {
             text-decoration: none;
             display: inline-block;
         }
-        .harpy-text {
-            color: #f5f5f5;
-            font-family: 'Playfair Display', 'Montserrat', 'Poppins', serif, sans-serif;
-            font-weight: 600;
-            font-size: 1.45rem;
-            letter-spacing: 1.3px;
-            background: linear-gradient(90deg, #fff 0%, #e0d6c3 40%, #f5f5f5 60%, #fff 100%);
-            background-size: 200% auto;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shimmerTextLux 2.5s linear infinite;
-            transition: color 0.2s;
-        }
-        .harpy-link:hover .harpy-text {
-            filter: brightness(1.18) drop-shadow(0 0 8px #fff8);
-        }
-        @keyframes shimmerTextLux {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-        @media (max-width: 480px) {
-            .harpy-logo { height: 41px; }
-            .harpy-text { font-size: 1.05rem; }
-            .ad-content.harpy-ad { gap: 7px; }
+
+                        @media (max-width: 480px) {
+            .harpy-credit { height: 75px; }
         }
 
         @media (max-width: 768px) {
@@ -895,7 +917,7 @@
 
             .footer-content {
                 gap: 20px;
-                padding: 20px 15px 15px;
+                padding: 20px 15px 40px;
             }
 
             .footer-logo-img {
@@ -982,6 +1004,28 @@
                 height: 28px;
             }
         }
+        .footer-contact-box {
+            background: transparent;
+            border: 2.5px solid #d4af37;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(212,175,55,0.10);
+            padding: 18px 18px 10px 18px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            width: 100%;
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+        }
+        .footer-contact-box .contact-item svg {
+            width: 28px !important;
+            height: 28px !important;
+            margin-right: 8px;
+            margin-top: 0;
+            padding: 2px;
+        }
     </style>
 </head>
 <body>
@@ -1034,47 +1078,41 @@
         <footer class="footer">
             <div class="footer-content">
                 <!-- Kafe Bilgileri -->
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="/img/meringa-renkli.png" alt="Meringa Logo" class="footer-logo-img">
-                    </div>
-                </div>
 
                 <!-- İletişim ve Çalışma Saatleri -->
                 <div class="footer-section">
-                    <div class="footer-contact">
+                    <div class="footer-contact footer-contact-box">
+                        <div class="footer-logo" style="margin-bottom: 0;">
+                            <img src="/img/meringa-renkli.png" alt="Meringa Logo" class="footer-logo-img">
+                        </div>
+                        <div class="footer-social" style="margin-bottom: 8px;">
+                            <a href="https://www.instagram.com/meringabakeryy/" target="_blank" class="social-link instagram">
+                                <!-- Font Awesome CDN -->
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+                                <i class="fa-brands fa-instagram" style="font-size: 1.3em; color: #b88900;"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://maps.app.goo.gl/dfMfdrm7aXaPamyf6" target="_blank" class="social-link maps">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Haritalar</span>
+                            </a>
+                        </div>
                         <div class="contact-item">
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
-                            <span>Yeşilköy Mahallesi, Şehit Özcan Canik Sokak, No: 3/70B Bakırköy, 34000 Florya/İstanbul</span>
+                            <span>Yeşilköy Mahallesi, Şehit Özcan Canik Sokak, No: 3/70B Bakırköy, Florya/İstanbul</span>
                         </div>
                         <div class="contact-item">
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                 <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                             <span>Her Gün 07:30 – 00:00</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Sosyal Medya -->
-                <div class="footer-section">
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/meringabakeryy/" target="_blank" class="social-link instagram">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://maps.app.goo.gl/dfMfdrm7aXaPamyf6" target="_blank" class="social-link maps">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <span>Haritalar</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -1082,15 +1120,12 @@
             <!-- Reklam Çubuğu -->
             <div class="ad-bar">
                 <div class="ad-content harpy-ad">
-                    <img src="/img/harpy-logo.png" alt="Harpy Social" class="harpy-logo">
-                    <a href="https://harpysocial.com" target="_blank" class="harpy-link"><span class="harpy-text">Harpy Social</span></a>
+                    <a href="https://harpysocial.com" target="_blank" class="harpy-link">
+                        <img src="/img/harpy-credit.png" alt="Harpy Social" class="harpy-credit">
+                    </a>
                 </div>
             </div>
         </footer>
-
-        <div class="containers" style="height: 180px">
-
-        </div>
 
         <div class="search-modal" id="searchModal">
             <div class="search-container">
