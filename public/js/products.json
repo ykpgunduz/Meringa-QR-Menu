@@ -498,7 +498,8 @@
                 "name_en": "Dubai Single Cake",
                 "desc_tr": "Adet",
                 "desc_en": "Piece",
-                "price": 400
+                "price": 400,
+                "image": "dubai-tek-pasta.jpeg"
             },
             {
                 "id": 55,
@@ -570,7 +571,8 @@
                 "name_en": "Milk Filter Coffee",
                 "desc_tr": "Adet",
                 "desc_en": "Piece",
-                "price": 170
+                "price": 170,
+                "image": "filtre-kahve.jpg"
             },
             {
                 "id": 63,
@@ -883,8 +885,8 @@
                 "id": 98,
                 "name_tr": "Tavuklu Sezar Salata",
                 "name_en": "Chicken Caesar Salad",
-                "desc_tr": "Adet",
-                "desc_en": "Piece",
+                "desc_tr": "Porsiyon",
+                "desc_en": "Portion",
                 "price": 380,
                 "image": "tavuklu-sezar-salata.jpeg"
             },
@@ -892,24 +894,24 @@
                 "id": 99,
                 "name_tr": "Somon Fümeli Salata",
                 "name_en": "Smoked Salmon Salad",
-                "desc_tr": "Adet",
-                "desc_en": "Piece",
+                "desc_tr": "Porsiyon",
+                "desc_en": "Portion",
                 "price": 400
             },
             {
                 "id": 100,
-                "name_tr": "Köfteli bowl",
+                "name_tr": "Köfteli Bowl",
                 "name_en": "Meatball Bowl",
-                "desc_tr": "",
-                "desc_en": "",
+                "desc_tr": "Porsiyon",
+                "desc_en": "Portion",
                 "price": 450
             },
             {
                 "id": 101,
                 "name_tr": "Granola",
                 "name_en": "Granola",
-                "desc_tr": "",
-                "desc_en": "",
+                "desc_tr": "Porsiyon",
+                "desc_en": "Portion",
                 "price": 380,
                 "image": "granola.jpeg"
             }
