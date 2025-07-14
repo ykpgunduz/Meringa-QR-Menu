@@ -6,29 +6,9 @@
             "name_en": "Breakfast Snacks"
         },
         {
-            "key": "ekmekler",
-            "name_tr": "Ekmekler",
-            "name_en": "Breads"
-        },
-        {
             "key": "tatlilar",
             "name_tr": "Tatlılar",
             "name_en": "Desserts"
-        },
-        {
-            "key": "sicak-kahveler",
-            "name_tr": "Sıcak Kahveler",
-            "name_en": "Hot Coffees"
-        },
-        {
-            "key": "soguk-kahveler",
-            "name_tr": "Soğuk Kahveler",
-            "name_en": "Cold Coffees"
-        },
-        {
-            "key": "sicak-icecekler",
-            "name_tr": "Sıcak İçecekler",
-            "name_en": "Hot Drinks"
         },
         {
             "key": "soguk-icecekler",
@@ -36,9 +16,29 @@
             "name_en": "Cold Drinks"
         },
         {
+            "key": "soguk-kahveler",
+            "name_tr": "Soğuk Kahveler",
+            "name_en": "Cold Coffees"
+        },
+        {
             "key": "bowl-salatalar",
             "name_tr": "Bowl ve Salatalar",
             "name_en": "Bowls & Salads"
+        },
+        {
+            "key": "sicak-icecekler",
+            "name_tr": "Sıcak İçecekler",
+            "name_en": "Hot Drinks"
+        },
+        {
+            "key": "sicak-kahveler",
+            "name_tr": "Sıcak Kahveler",
+            "name_en": "Hot Coffees"
+        },
+        {
+            "key": "ekmekler",
+            "name_tr": "Ekmekler",
+            "name_en": "Breads"
         }
     ],
     "products": {
@@ -163,7 +163,8 @@
                 "name_en": "Cheese Omelette",
                 "desc_tr": "Adet",
                 "desc_en": "Piece",
-                "price": 320
+                "price": 320,
+                "image": "peynirli-omlet.jpeg"
             },
             {
                 "id": 16,
@@ -171,7 +172,8 @@
                 "name_en": "Avocado Omelette",
                 "desc_tr": "Adet",
                 "desc_en": "Piece",
-                "price": 360
+                "price": 360,
+                "image": "avakadolu-omlet.jpeg"
             },
             {
                 "id": 17,
@@ -290,7 +292,8 @@
                 "name_en": "Nutella Eclair",
                 "desc_tr": "Kg",
                 "desc_en": "Kg",
-                "price": 850
+                "price": 850,
+                "image": "ekler.jpeg"
             },
             {
                 "id": 31,
@@ -298,7 +301,8 @@
                 "name_en": "Lotus Eclair",
                 "desc_tr": "Kg",
                 "desc_en": "Kg",
-                "price": 850
+                "price": 850,
+                "image": "ekler.jpeg"
             },
             {
                 "id": 32,
@@ -323,7 +327,8 @@
                 "name_en": "Lotus CheeseCake",
                 "desc_tr": "Adet",
                 "desc_en": "Piece",
-                "price": 290
+                "price": 290,
+                "image": "lotus-cheesecake.jpeg"
             },
             {
                 "id": 35,
@@ -339,7 +344,8 @@
                 "name_en": "Budapest",
                 "desc_tr": "Adet",
                 "desc_en": "Piece",
-                "price": 290
+                "price": 290,
+                "image": "budapeste.jpg"
             },
             {
                 "id": 37,
@@ -432,7 +438,8 @@
                 "name_en": "Caramel Chocolate Eclair",
                 "desc_tr": "Kg",
                 "desc_en": "Kg",
-                "price": 850
+                "price": 850,
+                "image": "ekler.jpeg"
             },
             {
                 "id": 48,
@@ -440,7 +447,8 @@
                 "name_en": "Pistachio Eclair",
                 "desc_tr": "Kg",
                 "desc_en": "Kg",
-                "price": 850
+                "price": 850,
+                "image": "ekler.jpeg"
             },
             {
                 "id": 49,
@@ -448,7 +456,8 @@
                 "name_en": "Tiramisu Eclair",
                 "desc_tr": "Kg",
                 "desc_en": "Kg",
-                "price": 850
+                "price": 850,
+                "image": "ekler.jpeg"
             },
             {
                 "id": 50,

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +73,7 @@
             font-size: 2.6rem;
             font-weight: 700;
             margin-bottom: 28px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8), 0 4px 20px rgba(0,0,0,0.6);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 4px 20px rgba(0, 0, 0, 0.6);
             letter-spacing: -0.8px;
         }
 
@@ -89,7 +90,7 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             -webkit-tap-highlight-color: transparent;
             user-select: none;
         }
@@ -98,13 +99,13 @@
             background: #fff;
             color: #1a1a1a;
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         }
 
         .header-btn:active {
             transform: translateY(-1px) scale(0.95);
             background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
         }
 
         .header-controls {
@@ -117,7 +118,8 @@
             z-index: 15;
         }
 
-        .header-lang, .header-search {
+        .header-lang,
+        .header-search {
             width: 45px;
             height: 45px;
             border-radius: 50%;
@@ -130,7 +132,7 @@
             color: #1a1a1a;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             -webkit-tap-highlight-color: transparent;
             user-select: none;
         }
@@ -140,17 +142,19 @@
             font-weight: 700;
         }
 
-        .header-lang:hover, .header-search:hover {
+        .header-lang:hover,
+        .header-search:hover {
             background: #fff;
             color: #1a1a1a;
             transform: scale(1.1);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
         }
 
-        .header-lang:active, .header-search:active {
+        .header-lang:active,
+        .header-search:active {
             transform: scale(0.9);
             background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
         }
 
         .main-content {
@@ -195,13 +199,13 @@
         .product-item:hover {
             background: linear-gradient(135deg, #fafbfc 0%, #f8f9fa 100%);
             transform: translateX(8px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
 
         .product-item:active {
             transform: scale(0.98) translateX(8px);
             background: linear-gradient(135deg, #f0f2f5 0%, #e8eaed 100%);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
         }
 
         .product-item:last-child {
@@ -215,7 +219,7 @@
             object-fit: cover;
             background: #f5f5f5;
             margin-right: 18px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
             transition: all 0.3s ease;
             border: 2px solid #f8f9fa;
         }
@@ -293,46 +297,6 @@
             color: #6c757d;
         }
 
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 55px;
-            height: 55px;
-            background: linear-gradient(135deg, #d4af37, #ffd700);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #1a1a1a;
-            text-decoration: none;
-            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
-            transition: all 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(100px);
-            z-index: 1000;
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
-        }
-
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.6);
-            background: linear-gradient(135deg, #ffd700, #d4af37);
-        }
-
-        .back-to-top:active {
-            transform: translateY(-4px) scale(0.95);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-        }
-
         .loading {
             display: flex;
             justify-content: center;
@@ -374,32 +338,32 @@
             opacity: 1;
         }
 
-                 .search-container {
-             background: #fff;
-             border-radius: 20px;
-             margin: 20px;
-             padding: 20px;
-             width: 100%;
-             max-width: 600px;
-             height: calc(100vh - 40px);
-             display: flex;
-             flex-direction: column;
-             transform: translateY(-50px);
-             transition: transform 0.3s ease;
-         }
+        .search-container {
+            background: #fff;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            height: calc(100vh - 40px);
+            display: flex;
+            flex-direction: column;
+            transform: translateY(-50px);
+            transition: transform 0.3s ease;
+        }
 
         .search-modal.show .search-container {
             transform: translateY(0);
         }
 
-                 .search-header {
-             display: flex;
-             align-items: center;
-             justify-content: space-between;
-             margin-bottom: 25px;
-             padding-bottom: 18px;
-             border-bottom: 2px solid #f0f2f5;
-         }
+        .search-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            padding-bottom: 18px;
+            border-bottom: 2px solid #f0f2f5;
+        }
 
         .search-title {
             font-size: 1.3rem;
@@ -427,21 +391,21 @@
             transform: scale(1.1);
         }
 
-                 .search-input-container {
-             position: relative;
-             margin-bottom: 25px;
-         }
+        .search-input-container {
+            position: relative;
+            margin-bottom: 25px;
+        }
 
-                 .search-input {
-             width: 100%;
-             padding: 18px 20px 18px 55px;
-             border: 2px solid #f0f2f5;
-             border-radius: 15px;
-             font-size: 1.1rem;
-             background: #fafbfc;
-             transition: all 0.3s ease;
-             color: #2d2d2d;
-         }
+        .search-input {
+            width: 100%;
+            padding: 18px 20px 18px 55px;
+            border: 2px solid #f0f2f5;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            background: #fafbfc;
+            transition: all 0.3s ease;
+            color: #2d2d2d;
+        }
 
         .search-input:focus {
             outline: none;
@@ -450,93 +414,93 @@
             box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
         }
 
-                 .search-icon {
-             position: absolute;
-             left: 18px;
-             top: 50%;
-             transform: translateY(-50%);
-             color: #6c757d;
-             pointer-events: none;
-         }
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            pointer-events: none;
+        }
 
-                 .search-results {
-             flex: 1;
-             overflow-y: auto;
-             padding-right: 10px;
-         }
+        .search-results {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
 
-         .search-results::-webkit-scrollbar {
-             width: 6px;
-         }
+        .search-results::-webkit-scrollbar {
+            width: 6px;
+        }
 
-         .search-results::-webkit-scrollbar-track {
-             background: #f1f1f1;
-             border-radius: 3px;
-         }
+        .search-results::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
 
-         .search-results::-webkit-scrollbar-thumb {
-             background: #d4af37;
-             border-radius: 3px;
-         }
+        .search-results::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 3px;
+        }
 
-         .search-results::-webkit-scrollbar-thumb:hover {
-             background: #b8941f;
-         }
+        .search-results::-webkit-scrollbar-thumb:hover {
+            background: #b8941f;
+        }
 
-                 .search-result-item {
-             display: flex;
-             align-items: center;
-             padding: 18px;
-             border-radius: 15px;
-             margin-bottom: 12px;
-             background: #fafbfc;
-             border: 1px solid #f0f2f5;
-             transition: all 0.3s ease;
-             cursor: pointer;
-             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-         }
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            background: #fafbfc;
+            border: 1px solid #f0f2f5;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
 
         .search-result-item:hover {
             background: #f0f2f5;
             transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
-                 .search-result-img {
-             width: 70px;
-             height: 70px;
-             border-radius: 12px;
-             object-fit: cover;
-             margin-right: 18px;
-             background: #f5f5f5;
-             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-         }
+        .search-result-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-right: 18px;
+            background: #f5f5f5;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
         .search-result-info {
             flex: 1;
         }
 
-                 .search-result-name {
-             font-size: 1rem;
-             font-weight: 600;
-             color: #2d2d2d;
-             margin-bottom: 4px;
-         }
+        .search-result-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2d2d2d;
+            margin-bottom: 4px;
+        }
 
-         .search-result-category {
-             font-size: 0.8rem;
-             font-weight: 500;
-             color: #d4af37;
-             margin-bottom: 4px;
-             text-transform: uppercase;
-             letter-spacing: 0.5px;
-         }
+        .search-result-category {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #d4af37;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-         .search-result-price {
-             font-size: 1rem;
-             font-weight: 700;
-             color: #d4af37;
-         }
+        .search-result-price {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #d4af37;
+        }
 
         .search-result-desc {
             font-size: 0.85rem;
@@ -651,11 +615,11 @@
             text-align: left;
             font-weight: 500;
             width: 100%;
-            background: rgba(255,255,255,0.12);
+            background: rgba(255, 255, 255, 0.12);
             border-radius: 12px;
             padding: 7px 12px;
             margin-bottom: 6px;
-            box-shadow: 0 1.5px 8px rgba(212,175,55,0.07);
+            box-shadow: 0 1.5px 8px rgba(212, 175, 55, 0.07);
         }
 
         .contact-item svg {
@@ -666,7 +630,7 @@
             background: #fffbe6;
             border-radius: 50%;
             padding: 3px;
-            box-shadow: 0 1.5px 8px rgba(212,175,55,0.13);
+            box-shadow: 0 1.5px 8px rgba(212, 175, 55, 0.13);
         }
 
         .footer-hours {
@@ -718,13 +682,13 @@
             text-decoration: none;
             padding: 10px 18px;
             border-radius: 22px;
-            transition: all 0.2s cubic-bezier(.4,0,.2,1);
+            transition: all 0.2s cubic-bezier(.4, 0, .2, 1);
             font-size: 1rem;
             width: auto;
             min-width: 110px;
             justify-content: center;
             font-weight: 600;
-            box-shadow: 0 1.5px 8px rgba(212,175,55,0.10);
+            box-shadow: 0 1.5px 8px rgba(212, 175, 55, 0.10);
             flex-shrink: 0;
             border: 1.5px solid #d4af37;
             background: #fffbe6;
@@ -739,7 +703,7 @@
 
         .social-link.instagram:hover {
             transform: scale(1.08) translateY(-2px);
-            box-shadow: 0 4px 24px rgba(212,175,55,0.18);
+            box-shadow: 0 4px 24px rgba(212, 175, 55, 0.18);
             background: linear-gradient(90deg, #fffbe6 0%, #ffe066 100%);
             color: #a67c00;
         }
@@ -753,7 +717,7 @@
         .social-link.maps:hover {
             background: #000;
             transform: scale(1.08) translateY(-2px);
-            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
             color: #ffd700;
         }
 
@@ -773,8 +737,11 @@
         .ad-bar::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 40%, rgba(255,255,255,0.15) 100%);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 40%, rgba(255, 255, 255, 0.15) 100%);
             opacity: 0.8;
             pointer-events: none;
             z-index: 1;
@@ -783,11 +750,16 @@
         }
 
         @keyframes shimmerBar {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
         }
 
-                        .ad-content.harpy-ad {
+        .ad-content.harpy-ad {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -818,8 +790,10 @@
             display: inline-block;
         }
 
-                        @media (max-width: 480px) {
-            .harpy-credit { height: 75px; }
+        @media (max-width: 480px) {
+            .harpy-credit {
+                height: 75px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -838,7 +812,8 @@
                 right: 15px;
             }
 
-            .header-lang, .header-search {
+            .header-lang,
+            .header-search {
                 width: 40px;
                 height: 40px;
             }
@@ -863,13 +838,6 @@
 
             .product-desc {
                 font-size: 0.85rem;
-            }
-
-            .back-to-top {
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
             }
         }
 
@@ -949,7 +917,8 @@
                 gap: 3px;
             }
 
-            .ad-text, .ad-link {
+            .ad-text,
+            .ad-link {
                 font-size: 0.75rem;
             }
         }
@@ -1004,11 +973,12 @@
                 height: 28px;
             }
         }
+
         .footer-contact-box {
             background: transparent;
             border: 2.5px solid #d4af37;
             border-radius: 18px;
-            box-shadow: 0 4px 24px rgba(212,175,55,0.10);
+            box-shadow: 0 4px 24px rgba(212, 175, 55, 0.10);
             padding: 18px 18px 10px 18px;
             margin-bottom: 10px;
             margin-top: 5px;
@@ -1019,6 +989,7 @@
             align-items: center;
             gap: 18px;
         }
+
         .footer-contact-box .contact-item svg {
             width: 28px !important;
             height: 28px !important;
@@ -1028,6 +999,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -1036,9 +1008,10 @@
             <div class="header-controls">
                 <button class="header-lang" id="lang-toggle"></button>
                 <div class="header-search" title="Ara">
-                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="8"/>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
                     </svg>
                 </div>
             </div>
@@ -1060,292 +1033,272 @@
         </div>
     </div>
 
-    <a href="#" class="back-to-top" id="backToTop">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-            <line x1="12" y1="19" x2="12" y2="5"/>
-            <polyline points="5,12 12,5 19,12"/>
-        </svg>
-    </a>
-
     <!-- WhatsApp Sabit İkonu -->
     <a href="https://wa.me/905384088034" target="_blank" class="whatsapp-fixed" title="WhatsApp'tan Mesaj Gönder">
         <svg fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
         </svg>
     </a>
 
     <!-- Footer Section -->
-        <footer class="footer">
-            <div class="footer-content">
-                <!-- Kafe Bilgileri -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Kafe Bilgileri -->
 
-                <!-- İletişim ve Çalışma Saatleri -->
-                <div class="footer-section">
-                    <div class="footer-contact footer-contact-box">
-                        <div class="footer-logo" style="margin-bottom: 0;">
-                            <img src="/img/meringa-renkli.png" alt="Meringa Logo" class="footer-logo-img">
-                        </div>
-                        <div class="footer-social" style="margin-bottom: 8px;">
-                            <a href="https://www.instagram.com/meringabakeryy/" target="_blank" class="social-link instagram">
-                                <!-- Font Awesome CDN -->
-                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-                                <i class="fa-brands fa-instagram" style="font-size: 1.3em; color: #b88900;"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="https://maps.app.goo.gl/dfMfdrm7aXaPamyf6" target="_blank" class="social-link maps">
-                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                                <span>Haritalar</span>
-                            </a>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                            <span>Yeşilköy Mahallesi, Şehit Özcan Canik Sokak, No: 3/70B Bakırköy, Florya/İstanbul</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            <span>Her Gün 07:30 – 00:00</span>
-                        </div>
+            <!-- İletişim ve Çalışma Saatleri -->
+            <div class="footer-section">
+                <div class="footer-contact footer-contact-box">
+                    <div class="footer-logo" style="margin-bottom: 0;">
+                        <img src="/img/meringa-renkli.png" alt="Meringa Logo" class="footer-logo-img">
                     </div>
-                </div>
-            </div>
-
-            <!-- Reklam Çubuğu -->
-            <div class="ad-bar">
-                <div class="ad-content harpy-ad">
-                    <a href="https://harpysocial.com" target="_blank" class="harpy-link">
-                        <img src="/img/harpy-credit.png" alt="Harpy Social" class="harpy-credit">
-                    </a>
-                </div>
-            </div>
-        </footer>
-
-        <div class="search-modal" id="searchModal">
-            <div class="search-container">
-                <div class="search-header">
-                    <h2 class="search-title">Ürün Ara</h2>
-                    <button class="search-close" id="closeSearch">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <line x1="18" y1="6" x2="6" y2="18"/>
-                            <line x1="6" y1="6" x2="18" y2="18"/>
+                    <div class="footer-social" style="margin-bottom: 8px;">
+                        <a href="https://www.instagram.com/meringabakeryy/" target="_blank"
+                            class="social-link instagram">
+                            <!-- Font Awesome CDN -->
+                            <link rel="stylesheet"
+                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+                            <i class="fa-brands fa-instagram" style="font-size: 1.3em; color: #b88900;"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/dfMfdrm7aXaPamyf6" target="_blank" class="social-link maps">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Haritalar</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
                         </svg>
-                    </button>
-                </div>
-                <div class="search-input-container">
-                    <input type="text" class="search-input" id="searchInput" placeholder="Ürün adını girin...">
-                    <span class="search-icon">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                            <circle cx="11" cy="11" r="8"/>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        <span>Yeşilköy Mahallesi, Şehit Özcan Canik Sokak, No: 3/70B Bakırköy, Florya/İstanbul</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                    </span>
-                </div>
-                <div class="search-results" id="searchResults">
-                    <!-- Arama sonuçları burada görüntülenecek -->
+                        <span>Her Gün 07:30 – 00:00</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            // Dil seçimi
-            function getLangFromUrl() {
-                const params = new URLSearchParams(window.location.search);
-                const langParam = params.get('lang');
-                console.log('URL\'den alınan dil:', langParam);
-                return langParam;
-            }
+        <!-- Reklam Çubuğu -->
+        <div class="ad-bar">
+            <div class="ad-content harpy-ad">
+                <a href="https://harpysocial.com" target="_blank" class="harpy-link">
+                    <img src="/img/harpy-credit.png" alt="Harpy Social" class="harpy-credit">
+                </a>
+            </div>
+        </div>
+    </footer>
 
-            let lang = getLangFromUrl() || 'tr';
-            console.log('Başlangıç dili:', lang);
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <h2 class="search-title">Ürün Ara</h2>
+                <button class="search-close" id="closeSearch">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Ürün adını girin...">
+                <span class="search-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </span>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Arama sonuçları burada görüntülenecek -->
+            </div>
+        </div>
+    </div>
 
-                                    function toggleLang() {
-                const oldLang = lang;
-                lang = lang === 'tr' ? 'en' : 'tr';
-                console.log('Dil değiştirildi:', oldLang, '->', lang);
+    <script>
+        // Dil seçimi
+        function getLangFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            const langParam = params.get('lang');
+            console.log('URL\'den alınan dil:', langParam);
+            return langParam;
+        }
 
-                updateLangButton();
+        let lang = getLangFromUrl() || 'tr';
+        console.log('Başlangıç dili:', lang);
 
-                // URL'yi güncelle
-                const currentUrl = new URL(window.location);
-                currentUrl.searchParams.set('lang', lang);
-                window.history.replaceState({}, '', currentUrl);
-                console.log('URL güncellendi:', currentUrl.toString());
+        function toggleLang() {
+            const oldLang = lang;
+            lang = lang === 'tr' ? 'en' : 'tr';
+            console.log('Dil değiştirildi:', oldLang, '->', lang);
 
-                // Sayfayı hemen güncelle
-                if (productsData) {
-                    console.log('productsData mevcut, renderPage çağrılıyor...');
-                    renderPage();
-
-                    // Eğer arama modalı açıksa, arama sonuçlarını da güncelle
-                    if (document.getElementById('searchModal').classList.contains('show')) {
-                        const query = document.getElementById('searchInput').value.trim().toLowerCase();
-                        if (query.length > 0) {
-                            performSearch(query);
-                        } else {
-                            displayAllProducts();
-                        }
-                    }
-                } else {
-                    console.log('productsData yok, fetchData çağrılıyor...');
-                    fetchData();
-                }
-            }
-
-            function updateLangButton() {
-                const btn = document.getElementById('lang-toggle');
-                btn.textContent = lang.toUpperCase();
-            }
-
-            // Scroll to top functionality
-            const backToTop = document.getElementById('backToTop');
-
-            function checkScrollPosition() {
-                if (window.pageYOffset > 300) {
-                    backToTop.classList.add('show');
-                } else {
-                    backToTop.classList.remove('show');
-                }
-            }
-
-            window.addEventListener('scroll', checkScrollPosition);
-            window.addEventListener('load', checkScrollPosition);
-
-            backToTop.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-
-            document.getElementById('lang-toggle').onclick = toggleLang;
             updateLangButton();
 
-            // Arama butonuna tıklama olayı
-            document.querySelector('.header-search').onclick = showSearchModal;
+            // URL'yi güncelle
+            const currentUrl = new URL(window.location);
+            currentUrl.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', currentUrl);
+            console.log('URL güncellendi:', currentUrl.toString());
 
-            // Kategori anahtarı URL'den alınır
-            function getCategoryKey() {
-                const path = window.location.pathname;
-                const match = path.match(/category\/(.+)$/);
-                return match ? match[1] : '';
-            }
+            // Sayfayı hemen güncelle
+            if (productsData) {
+                console.log('productsData mevcut, renderPage çağrılıyor...');
+                renderPage();
 
-            let productsData = null;
-
-            async function fetchData() {
-                console.log('fetchData başladı...');
-                try {
-                    const res = await fetch('/js/products.json');
-                    productsData = await res.json();
-                    console.log('JSON verisi yüklendi, renderPage çağrılıyor...');
-                    renderPage();
-                } catch (error) {
-                    console.error('Veri yükleme hatası:', error);
-                    document.getElementById('loadingState').textContent = 'Yükleme hatası oluştu';
-                }
-            }
-
-                        function renderPage() {
-                console.log('=== renderPage başladı ===');
-                console.log('productsData mevcut mu:', !!productsData);
-                console.log('Mevcut dil:', lang);
-
-                if (!productsData) {
-                    console.log('productsData yok, renderPage çıkıyor');
-                    return;
-                }
-
-                const catKey = getCategoryKey();
-                console.log('Kategori anahtarı:', catKey);
-                const category = productsData.categories.find(c => c.key === catKey);
-                console.log('Bulunan kategori:', category);
-
-                // Kategori bilgilerini güncelle
-                const categoryTitle = category ? (lang === 'tr' ? category.name_tr : (category.name_en || category.name_tr || 'Kategori')) : 'Kategori';
-                console.log('Kategori başlığı:', categoryTitle);
-                document.getElementById('categoryTitle').textContent = categoryTitle;
-
-                // Kategori görseli
-                document.getElementById('headerImg').src = `/img/category/${catKey}.jpg`;
-
-                // Menüye dön butonunu güncelle
-                document.getElementById('backMenuBtn').textContent = lang === 'tr' ? 'Menüye Dön' : 'Back to Menu';
-                document.getElementById('backMenuBtn').onclick = function() {
-                    window.location.href = '/categories?lang=' + lang;
-                };
-
-                // Arama modalını güncelle
-                document.querySelector('.search-title').textContent = lang === 'tr' ? 'Ürün Ara' : 'Search Products';
-                document.getElementById('searchInput').placeholder = lang === 'tr' ? 'Ürün adını girin...' : 'Enter product name...';
-
-                                const productList = document.getElementById('productList');
-                const emptyState = document.getElementById('emptyState');
-                const loadingState = document.getElementById('loadingState');
-
-                // Loading state'i gizle (null kontrolü ile)
-                if (loadingState) {
-                    loadingState.style.display = 'none';
-                }
-
-                // Ürün listesini tamamen temizle
-                if (productList) {
-                    productList.innerHTML = '';
-                }
-                if (emptyState) {
-                    emptyState.style.display = 'none';
-                }
-
-                console.log('Ürün listesi temizlendi, yeni ürünler render ediliyor...');
-
-                const products = productsData.products[catKey] || [];
-                console.log('Kategori ürünleri:', products.length, 'adet');
-
-                if (products.length === 0) {
-                    const emptyMessage = lang === 'tr' ? 'Bu kategoride ürün bulunmuyor' : 'No products in this category';
-                    console.log('Boş mesaj:', emptyMessage);
-                    if (emptyState) {
-                        const emptyText = emptyState.querySelector('.empty-text');
-                        if (emptyText) {
-                            emptyText.textContent = emptyMessage;
-                        }
-                        emptyState.style.display = 'block';
+                // Eğer arama modalı açıksa, arama sonuçlarını da güncelle
+                if (document.getElementById('searchModal').classList.contains('show')) {
+                    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+                    if (query.length > 0) {
+                        performSearch(query);
+                    } else {
+                        displayAllProducts();
                     }
-                    return;
                 }
+            } else {
+                console.log('productsData yok, fetchData çağrılıyor...');
+                fetchData();
+            }
+        }
 
-                                                // Ürünleri render et
-                console.log('Ürünler render ediliyor, toplam:', products.length);
-                if (productList) {
-                    products.forEach((product, index) => {
-                        const item = document.createElement('div');
-                        item.className = 'product-item';
-                        item.style.animationDelay = `${index * 0.1}s`;
+        function updateLangButton() {
+            const btn = document.getElementById('lang-toggle');
+            btn.textContent = lang.toUpperCase();
+        }
 
-                        const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || 'Ürün');
-                        const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
+        // Arama butonuna tıklama olayı
+        document.querySelector('.header-search').onclick = showSearchModal;
 
-                        console.log(`Ürün ${index + 1}:`, {
-                            lang: lang,
-                            name_tr: product.name_tr,
-                            name_en: product.name_en,
-                            selected_name: productName,
-                            desc_tr: product.desc_tr,
-                            desc_en: product.desc_en,
-                            selected_desc: productDesc
-                        });
+        // Kategori anahtarı URL'den alınır
+        function getCategoryKey() {
+            const path = window.location.pathname;
+            const match = path.match(/category\/(.+)$/);
+            return match ? match[1] : '';
+        }
 
-                        // JSON'dan image alanını al, yoksa default kullan
-                        const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
+        let productsData = null;
 
-                        item.innerHTML = `
+        async function fetchData() {
+            console.log('fetchData başladı...');
+            try {
+                const res = await fetch('/js/products.json');
+                productsData = await res.json();
+                console.log('JSON verisi yüklendi, renderPage çağrılıyor...');
+                renderPage();
+            } catch (error) {
+                console.error('Veri yükleme hatası:', error);
+                document.getElementById('loadingState').textContent = 'Yükleme hatası oluştu';
+            }
+        }
+
+        function renderPage() {
+            console.log('=== renderPage başladı ===');
+            console.log('productsData mevcut mu:', !!productsData);
+            console.log('Mevcut dil:', lang);
+
+            if (!productsData) {
+                console.log('productsData yok, renderPage çıkıyor');
+                return;
+            }
+
+            const catKey = getCategoryKey();
+            console.log('Kategori anahtarı:', catKey);
+            const category = productsData.categories.find(c => c.key === catKey);
+            console.log('Bulunan kategori:', category);
+
+            // Kategori bilgilerini güncelle
+            const categoryTitle = category ? (lang === 'tr' ? category.name_tr : (category.name_en || category.name_tr ||
+                'Kategori')) : 'Kategori';
+            console.log('Kategori başlığı:', categoryTitle);
+            document.getElementById('categoryTitle').textContent = categoryTitle;
+
+            // Kategori görseli
+            document.getElementById('headerImg').src = `/img/category/${catKey}.jpg`;
+
+            // Menüye dön butonunu güncelle
+            document.getElementById('backMenuBtn').textContent = lang === 'tr' ? 'Menüye Dön' : 'Back to Menu';
+            document.getElementById('backMenuBtn').onclick = function() {
+                window.location.href = '/categories?lang=' + lang;
+            };
+
+            // Arama modalını güncelle
+            document.querySelector('.search-title').textContent = lang === 'tr' ? 'Ürün Ara' : 'Search Products';
+            document.getElementById('searchInput').placeholder = lang === 'tr' ? 'Ürün adını girin...' :
+                'Enter product name...';
+
+            const productList = document.getElementById('productList');
+            const emptyState = document.getElementById('emptyState');
+            const loadingState = document.getElementById('loadingState');
+
+            // Loading state'i gizle (null kontrolü ile)
+            if (loadingState) {
+                loadingState.style.display = 'none';
+            }
+
+            // Ürün listesini tamamen temizle
+            if (productList) {
+                productList.innerHTML = '';
+            }
+            if (emptyState) {
+                emptyState.style.display = 'none';
+            }
+
+            console.log('Ürün listesi temizlendi, yeni ürünler render ediliyor...');
+
+            const products = productsData.products[catKey] || [];
+            console.log('Kategori ürünleri:', products.length, 'adet');
+
+            if (products.length === 0) {
+                const emptyMessage = lang === 'tr' ? 'Bu kategoride ürün bulunmuyor' : 'No products in this category';
+                console.log('Boş mesaj:', emptyMessage);
+                if (emptyState) {
+                    const emptyText = emptyState.querySelector('.empty-text');
+                    if (emptyText) {
+                        emptyText.textContent = emptyMessage;
+                    }
+                    emptyState.style.display = 'block';
+                }
+                return;
+            }
+
+            // Ürünleri render et
+            console.log('Ürünler render ediliyor, toplam:', products.length);
+            if (productList) {
+                products.forEach((product, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'product-item';
+                    item.style.animationDelay = `${index * 0.1}s`;
+
+                    const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr ||
+                        'Ürün');
+                    const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr ||
+                        '');
+
+                    console.log(`Ürün ${index + 1}:`, {
+                        lang: lang,
+                        name_tr: product.name_tr,
+                        name_en: product.name_en,
+                        selected_name: productName,
+                        desc_tr: product.desc_tr,
+                        desc_en: product.desc_en,
+                        selected_desc: productDesc
+                    });
+
+                    // JSON'dan image alanını al, yoksa default kullan
+                    const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
+
+                    item.innerHTML = `
                             <img class='product-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
                             <div class='product-info'>
                                 <div class='product-header'>
@@ -1356,138 +1309,144 @@
                             </div>
                         `;
 
-                        productList.appendChild(item);
-                    });
+                    productList.appendChild(item);
+                });
 
-                    console.log('Tüm ürünler render edildi');
-                } else {
-                    console.error('productList elementi bulunamadı!');
-                }
-
-                // Scroll pozisyonunu kontrol et
-                checkScrollPosition();
-                console.log('=== renderPage tamamlandı ===');
+                console.log('Tüm ürünler render edildi');
+            } else {
+                console.error('productList elementi bulunamadı!');
             }
 
-            // Sayfa yüklendiğinde
-            document.addEventListener('DOMContentLoaded', function() {
-                fetchData();
+            // Scroll pozisyonunu kontrol et
+            console.log('=== renderPage tamamlandı ===');
+        }
+
+        // Sayfa yüklendiğinde
+        document.addEventListener('DOMContentLoaded', function() {
+            const langBtn = document.getElementById('lang-toggle');
+            if (langBtn) {
+                langBtn.onclick = toggleLang;
+                updateLangButton();
+            }
+            fetchData();
+        });
+
+        // Arama işlemleri
+        const searchModal = document.getElementById('searchModal');
+        const closeSearch = document.getElementById('closeSearch');
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+
+        function showSearchModal() {
+            searchModal.classList.add('show');
+            document.body.classList.add('no-scroll');
+
+            // Modal açıldığında input'a focus ol ve tüm ürünleri göster
+            setTimeout(() => {
+                searchInput.focus();
+                displayAllProducts();
+            }, 100);
+        }
+
+        function hideSearchModal() {
+            searchModal.classList.remove('show');
+            document.body.classList.remove('no-scroll');
+        }
+
+        closeSearch.addEventListener('click', hideSearchModal);
+
+        searchInput.addEventListener('input', function() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (query.length > 0) {
+                performSearch(query);
+            } else {
+                // Arama çubuğu boşsa tüm ürünleri göster
+                displayAllProducts();
+            }
+        });
+
+        function displayAllProducts() {
+            // Tüm kategorilerdeki ürünleri topla
+            const allProducts = [];
+
+            Object.keys(productsData.products).forEach(catKey => {
+                const products = productsData.products[catKey] || [];
+                products.forEach(product => {
+                    allProducts.push({
+                        ...product,
+                        categoryKey: catKey,
+                        categoryName: productsData.categories.find(c => c.key === catKey)
+                    });
+                });
             });
 
-            // Arama işlemleri
-            const searchModal = document.getElementById('searchModal');
-            const closeSearch = document.getElementById('closeSearch');
-            const searchInput = document.getElementById('searchInput');
-            const searchResults = document.getElementById('searchResults');
-
-                     function showSearchModal() {
-                 searchModal.classList.add('show');
-                 document.body.classList.add('no-scroll');
-
-                 // Modal açıldığında input'a focus ol ve tüm ürünleri göster
-                 setTimeout(() => {
-                     searchInput.focus();
-                     displayAllProducts();
-                 }, 100);
-             }
-
-            function hideSearchModal() {
-                searchModal.classList.remove('show');
-                document.body.classList.remove('no-scroll');
+            if (allProducts.length > 0) {
+                displaySearchResults(allProducts);
+            } else {
+                displayNoResults();
             }
+        }
 
-            closeSearch.addEventListener('click', hideSearchModal);
+        function performSearch(query) {
+            // Tüm kategorilerde arama yap
+            const allProducts = [];
 
-                     searchInput.addEventListener('input', function() {
-                 const query = searchInput.value.trim().toLowerCase();
-                 if (query.length > 0) {
-                     performSearch(query);
-                 } else {
-                     // Arama çubuğu boşsa tüm ürünleri göster
-                     displayAllProducts();
-                 }
-             });
+            Object.keys(productsData.products).forEach(catKey => {
+                const products = productsData.products[catKey] || [];
+                products.forEach(product => {
+                    allProducts.push({
+                        ...product,
+                        categoryKey: catKey,
+                        categoryName: productsData.categories.find(c => c.key === catKey)
+                    });
+                });
+            });
 
-                               function displayAllProducts() {
-                 // Tüm kategorilerdeki ürünleri topla
-                 const allProducts = [];
+            const results = allProducts.filter(product => {
+                const name = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || '');
+                const desc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
 
-                 Object.keys(productsData.products).forEach(catKey => {
-                     const products = productsData.products[catKey] || [];
-                     products.forEach(product => {
-                         allProducts.push({
-                             ...product,
-                             categoryKey: catKey,
-                             categoryName: productsData.categories.find(c => c.key === catKey)
-                         });
-                     });
-                 });
+                return name.toLowerCase().includes(query) ||
+                    (desc && desc.toLowerCase().includes(query));
+            });
 
-                 if (allProducts.length > 0) {
-                     displaySearchResults(allProducts);
-                 } else {
-                     displayNoResults();
-                 }
-             }
+            if (results.length > 0) {
+                displaySearchResults(results);
+            } else {
+                displayNoResults();
+            }
+        }
 
-                      function performSearch(query) {
-                 // Tüm kategorilerde arama yap
-                 const allProducts = [];
+        function displaySearchResults(results) {
+            searchResults.innerHTML = '';
 
-                 Object.keys(productsData.products).forEach(catKey => {
-                     const products = productsData.products[catKey] || [];
-                     products.forEach(product => {
-                         allProducts.push({
-                             ...product,
-                             categoryKey: catKey,
-                             categoryName: productsData.categories.find(c => c.key === catKey)
-                         });
-                     });
-                 });
+            results.forEach((product, index) => {
+                const item = document.createElement('div');
+                item.className = 'search-result-item';
+                item.style.animationDelay = `${index * 0.1}s`;
 
-                 const results = allProducts.filter(product => {
-                     const name = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || '');
-                     const desc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
+                item.onclick = function() {
+                    hideSearchModal();
 
-                     return name.toLowerCase().includes(query) ||
-                            (desc && desc.toLowerCase().includes(query));
-                 });
+                    // Eğer ürün farklı kategorideyse, o kategoriye git
+                    if (product.categoryKey !== getCategoryKey()) {
+                        window.location.href = `/category/${product.categoryKey}?lang=${lang}`;
+                    } else {
+                        // Aynı kategorideyse ürünü göster
+                        scrollToProduct(product.id);
+                    }
+                };
 
-                 if (results.length > 0) {
-                     displaySearchResults(results);
-                 } else {
-                     displayNoResults();
-                 }
-             }
+                const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr ||
+                    'Ürün');
+                const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
+                const categoryName = lang === 'tr' ? product.categoryName.name_tr : (product.categoryName.name_en ||
+                    product.categoryName.name_tr || 'Kategori');
 
-                      function displaySearchResults(results) {
-                 searchResults.innerHTML = '';
+                // JSON'dan image alanını al, yoksa default kullan
+                const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
 
-                 results.forEach((product, index) => {
-                     const item = document.createElement('div');
-                     item.className = 'search-result-item';
-                     item.style.animationDelay = `${index * 0.1}s`;
-
-                     item.onclick = function() {
-                         hideSearchModal();
-
-                         // Eğer ürün farklı kategorideyse, o kategoriye git
-                         if (product.categoryKey !== getCategoryKey()) {
-                             window.location.href = `/category/${product.categoryKey}?lang=${lang}`;
-                         } else {
-                             // Aynı kategorideyse ürünü göster
-                             scrollToProduct(product.id);
-                         }
-                     };
-
-                     const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || 'Ürün');
-                     const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
-                     const categoryName = lang === 'tr' ? product.categoryName.name_tr : (product.categoryName.name_en || product.categoryName.name_tr || 'Kategori');
-
-                     // JSON'dan image alanını al, yoksa default kullan
-                     const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
-
-                     item.innerHTML = `
+                item.innerHTML = `
                          <img class='search-result-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
                          <div class='search-result-info'>
                              <div class='search-result-name'>${productName}</div>
@@ -1497,57 +1456,59 @@
                          </div>
                      `;
 
-                     searchResults.appendChild(item);
-                 });
-             }
+                searchResults.appendChild(item);
+            });
+        }
 
-                     function displayNoResults() {
-                 const noResultsText = lang === 'tr' ? 'Ürün bulunamadı' : 'No products found';
-                 searchResults.innerHTML = `
+        function displayNoResults() {
+            const noResultsText = lang === 'tr' ? 'Ürün bulunamadı' : 'No products found';
+            searchResults.innerHTML = `
                      <div class="no-results">
                          <div class="no-results-icon">🔍</div>
                          <div class="no-results-text">${noResultsText}</div>
                      </div>
                  `;
-             }
+        }
 
-                     function scrollToProduct(productId) {
-                 const productElements = document.querySelectorAll('.product-item');
-                 for (let element of productElements) {
-                     const img = element.querySelector('.product-img');
-                     if (img && (img.src.includes(productId) || img.src.includes(`/${productId}.jpg`) || img.src.includes(`/${productId}.jpeg`))) {
-                         element.scrollIntoView({
-                             behavior: 'smooth',
-                             block: 'center'
-                         });
+        function scrollToProduct(productId) {
+            const productElements = document.querySelectorAll('.product-item');
+            for (let element of productElements) {
+                const img = element.querySelector('.product-img');
+                if (img && (img.src.includes(productId) || img.src.includes(`/${productId}.jpg`) || img.src.includes(
+                        `/${productId}.jpeg`))) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
 
-                         // Ürünü vurgula
-                         element.style.background = 'linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%)';
-                         element.style.border = '2px solid #d4af37';
+                    // Ürünü vurgula
+                    element.style.background = 'linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%)';
+                    element.style.border = '2px solid #d4af37';
 
-                         setTimeout(() => {
-                             element.style.background = '';
-                             element.style.border = '';
-                         }, 3000);
+                    setTimeout(() => {
+                        element.style.background = '';
+                        element.style.border = '';
+                    }, 3000);
 
-                         break;
-                     }
-                 }
-             }
+                    break;
+                }
+            }
+        }
 
-             // Modal dışına tıklayınca kapatma
-             searchModal.addEventListener('click', function(e) {
-                 if (e.target === searchModal) {
-                     hideSearchModal();
-                 }
-             });
+        // Modal dışına tıklayınca kapatma
+        searchModal.addEventListener('click', function(e) {
+            if (e.target === searchModal) {
+                hideSearchModal();
+            }
+        });
 
-             // ESC tuşu ile kapatma
-             document.addEventListener('keydown', function(e) {
-                 if (e.key === 'Escape' && searchModal.classList.contains('show')) {
-                     hideSearchModal();
-                 }
-             });
-        </script>
-    </body>
+        // ESC tuşu ile kapatma
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && searchModal.classList.contains('show')) {
+                hideSearchModal();
+            }
+        });
+    </script>
+</body>
+
 </html>
