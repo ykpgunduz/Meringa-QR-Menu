@@ -6,6 +6,11 @@
             "name_en": "Breakfast Snacks"
         },
         {
+            "key": "bowl-salatalar",
+            "name_tr": "Bowl ve Salatalar",
+            "name_en": "Bowls & Salads"
+        },
+        {
             "key": "tatlilar",
             "name_tr": "Tatlılar",
             "name_en": "Desserts"
@@ -19,11 +24,6 @@
             "key": "soguk-kahveler",
             "name_tr": "Soğuk Kahveler",
             "name_en": "Cold Coffees"
-        },
-        {
-            "key": "bowl-salatalar",
-            "name_tr": "Bowl ve Salatalar",
-            "name_en": "Bowls & Salads"
         },
         {
             "key": "sicak-icecekler",
