@@ -276,6 +276,12 @@
             line-height: 1.5;
             margin-top: 6px;
             font-weight: 400;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 2.7em;
         }
 
         .empty-state {
@@ -506,6 +512,13 @@
             font-size: 0.85rem;
             color: #718096;
             margin-top: 4px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 2.4em;
+            line-height: 1.4;
         }
 
         .no-results {
@@ -997,6 +1010,286 @@
             margin-top: 0;
             padding: 2px;
         }
+
+        /* Ürün Detay Modal Stilleri */
+        .product-detail-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(10px);
+            z-index: 3000;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .product-detail-modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+        }
+
+        .product-detail-container {
+            background: #fff;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 480px;
+            max-height: 90vh;
+            position: relative;
+            transform: translateY(50px) scale(0.9);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        .product-detail-modal.show .product-detail-container {
+            transform: translateY(0) scale(1);
+        }
+
+        .product-detail-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #fff;
+            z-index: 10;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        .product-detail-close:hover {
+            background: rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+        .product-detail-close:active {
+            transform: scale(0.9);
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .product-detail-image-container {
+            position: relative;
+            height: 350px;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .product-detail-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-detail-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+            pointer-events: none;
+        }
+
+        .product-detail-content {
+            padding: 30px 28px 32px 28px;
+            text-align: center;
+        }
+
+        .product-detail-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2d2d2d;
+            margin-bottom: 16px;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+
+        .product-detail-description {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            text-align: left;
+            padding: 0 8px;
+        }
+
+        .product-detail-price-container {
+            background: linear-gradient(135deg, #fffbe6 0%, #f8e7b3 100%);
+            border: 2px solid #d4af37;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-detail-price-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+            pointer-events: none;
+        }
+
+        .product-detail-price-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #b88900;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-detail-price {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #d4af37;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(212, 175, 55, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .product-detail-price::after {
+            content: '₺';
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-left: 2px;
+        }
+
+        /* Mobile optimizasyonları */
+        @media (max-width: 768px) {
+            .product-detail-modal {
+                padding: 15px;
+            }
+
+            .product-detail-container {
+                max-width: 100%;
+                margin: 0;
+                border-radius: 20px;
+                max-height: 85vh;
+            }
+
+            .product-detail-close {
+                top: 15px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .product-detail-image-container {
+                height: 300px;
+            }
+
+            .product-detail-content {
+                padding: 25px 22px 28px 22px;
+            }
+
+            .product-detail-name {
+                font-size: 1.6rem;
+                margin-bottom: 14px;
+            }
+
+            .product-detail-description {
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+                padding: 0 4px;
+            }
+
+            .product-detail-price-container {
+                padding: 18px;
+                border-radius: 18px;
+            }
+
+            .product-detail-price {
+                font-size: 1.6rem;
+            }
+
+            .product-detail-price::after {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-detail-modal {
+                padding: 10px;
+            }
+
+            .product-detail-container {
+                border-radius: 18px;
+                max-height: 90vh;
+            }
+
+            .product-detail-close {
+                top: 12px;
+                right: 12px;
+                width: 36px;
+                height: 36px;
+            }
+
+            .product-detail-image-container {
+                height: 270px;
+            }
+
+            .product-detail-content {
+                padding: 22px 18px 25px 18px;
+            }
+
+            .product-detail-name {
+                font-size: 1.5rem;
+                margin-bottom: 12px;
+            }
+
+            .product-detail-description {
+                font-size: 0.9rem;
+                margin-bottom: 18px;
+                padding: 0 2px;
+            }
+
+            .product-detail-price-container {
+                padding: 16px;
+                border-radius: 16px;
+            }
+
+            .product-detail-price {
+                font-size: 1.5rem;
+            }
+
+            .product-detail-price::after {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Scroll engelleme */
+        .no-scroll {
+            overflow: hidden;
+            height: 100vh;
+        }
     </style>
 </head>
 
@@ -1029,6 +1322,34 @@
             <div class="empty-state" id="emptyState" style="display:none;">
                 <div class="empty-icon">🍽️</div>
                 <div class="empty-text">Bu kategoride ürün bulunmuyor</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ürün Detay Modal -->
+    <div class="product-detail-modal" id="productDetailModal">
+        <div class="product-detail-container">
+            <button class="product-detail-close" id="closeProductDetail">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+
+            <div class="product-detail-image-container">
+                <img class="product-detail-image" id="productDetailImage" src="" alt="">
+                <div class="product-detail-image-overlay"></div>
+            </div>
+
+            <div class="product-detail-content">
+                <h2 class="product-detail-name" id="productDetailName"></h2>
+                <p class="product-detail-description" id="productDetailDescription"></p>
+
+                <div class="product-detail-price-container">
+                    <div class="product-detail-price-label" id="productDetailPriceLabel">Fiyat</div>
+                    <div class="product-detail-price" id="productDetailPrice"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -1298,6 +1619,11 @@
                     // JSON'dan image alanını al, yoksa default kullan
                     const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
 
+                    // Ürün tıklama event'i için veri ekle
+                    item.addEventListener('click', function() {
+                        showProductDetail(product, productName, productDesc, imgPath);
+                    });
+
                     item.innerHTML = `
                             <img class='product-img' src='${imgPath}' alt='${productName}' onerror="this.onerror=null;this.src='/img/default.jpg';">
                             <div class='product-info'>
@@ -1426,14 +1752,19 @@
                 item.style.animationDelay = `${index * 0.1}s`;
 
                 item.onclick = function() {
-                    hideSearchModal();
-
                     // Eğer ürün farklı kategorideyse, o kategoriye git
                     if (product.categoryKey !== getCategoryKey()) {
+                        hideSearchModal();
                         window.location.href = `/category/${product.categoryKey}?lang=${lang}`;
                     } else {
-                        // Aynı kategorideyse ürünü göster
-                        scrollToProduct(product.id);
+                        // Aynı kategorideyse ürün detayını göster
+                        hideSearchModal();
+
+                        const productName = lang === 'tr' ? product.name_tr : (product.name_en || product.name_tr || 'Ürün');
+                        const productDesc = lang === 'tr' ? product.desc_tr : (product.desc_en || product.desc_tr || '');
+                        const imgPath = product.image ? `/img/products/${product.image}` : '/img/default.jpg';
+
+                        showProductDetail(product, productName, productDesc, imgPath);
                     }
                 };
 
@@ -1506,6 +1837,48 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && searchModal.classList.contains('show')) {
                 hideSearchModal();
+            }
+        });
+
+        // Ürün detay modal işlemleri
+        const productDetailModal = document.getElementById('productDetailModal');
+        const closeProductDetail = document.getElementById('closeProductDetail');
+
+        function showProductDetail(product, productName, productDesc, imgPath) {
+            // Modal elemanlarını doldur
+            document.getElementById('productDetailImage').src = imgPath;
+            document.getElementById('productDetailImage').alt = productName;
+            document.getElementById('productDetailName').textContent = productName;
+            document.getElementById('productDetailDescription').textContent = productDesc || '';
+            document.getElementById('productDetailPrice').textContent = product.price;
+
+            // Fiyat etiketini dile göre ayarla
+            document.getElementById('productDetailPriceLabel').textContent = lang === 'tr' ? 'Fiyat' : 'Price';
+
+            // Modal'ı göster
+            productDetailModal.classList.add('show');
+            document.body.classList.add('no-scroll');
+        }
+
+        function hideProductDetail() {
+            productDetailModal.classList.remove('show');
+            document.body.classList.remove('no-scroll');
+        }
+
+        // Kapatma butonuna tıklama
+        closeProductDetail.addEventListener('click', hideProductDetail);
+
+        // Modal dışına tıklayınca kapatma
+        productDetailModal.addEventListener('click', function(e) {
+            if (e.target === productDetailModal) {
+                hideProductDetail();
+            }
+        });
+
+        // ESC tuşu ile kapatma (ürün detay modal için)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && productDetailModal.classList.contains('show')) {
+                hideProductDetail();
             }
         });
     </script>
